@@ -1,6 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import { Wrapper } from './Header.styles';
 
-export const Header = () => {
-    return <div>Header</div>;
+
+
+export const Header = (): JSX.Element => {
+    return (
+        <Wrapper height='80vh'></Wrapper>
+    );
 };

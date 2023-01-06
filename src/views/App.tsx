@@ -1,7 +1,8 @@
 import React from 'react';
+import { Header } from '../components/organism/Header';
 
 const App = (): JSX.Element => {
-    return <div className="App"></div>;
+    return <Header />;
 };
 
 export default App;
