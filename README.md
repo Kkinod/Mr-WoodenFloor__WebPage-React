@@ -1,7 +1,9 @@
 Web Mr. Woddenfloor written in react
 
-Used:
-
+Użyć:
+- Style Components
+- useReducer
+- otestować
 
 
 ===============================================
