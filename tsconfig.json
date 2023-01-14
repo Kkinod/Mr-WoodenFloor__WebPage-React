@@ -24,6 +24,6 @@
       // enabling react-jsx support
       "jsx": "react-jsx"
    },
-   "include": ["src"]
+   "include": ["src", "react-app-env.d.ts"]
 }
  

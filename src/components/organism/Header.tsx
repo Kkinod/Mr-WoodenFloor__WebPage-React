@@ -1,19 +1,18 @@
 import React from 'react';
 import { BgVideContent, BgVideo, Wrapper } from './Header.styles';
-// import CuttingWoodmp4 from '../../assets/video/'
-// import {abc} from '../../assets/img/'
+import videoHeaderMp4 from '../../assets/video/CuttingWoodmp4.mp4'
+import videoHeaderWebm from '../../assets/video/CuttingWoodWebm.webm'
 
 export const Header = (): JSX.Element => {
     return (
         <Wrapper>
             <BgVideo>
-                <BgVideContent>
-                    <source src={CuttingWoodmp4} />
-                    <source src="./img/video/Cutting wood with a miter saw.webm" />
+                <BgVideContent autoPlay muted loop>
+                    <source src={videoHeaderMp4} />
+                    <source src={videoHeaderWebm} />
                     Twoja przeglądarka nie wspiera video!
                 </BgVideContent>
             </BgVideo>
         </Wrapper>
-    
     );
 };
