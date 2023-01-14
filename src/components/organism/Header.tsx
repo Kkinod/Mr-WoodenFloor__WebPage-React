@@ -1,7 +1,7 @@
 import React from 'react';
 import { BgVideContent, BgVideo, Wrapper } from './Header.styles';
-import CuttingWoodmp4 from '../../assets/video/'
-import {abc} from '../../assets/img/'
+// import CuttingWoodmp4 from '../../assets/video/'
+// import {abc} from '../../assets/img/'
 
 export const Header = (): JSX.Element => {
     return (
