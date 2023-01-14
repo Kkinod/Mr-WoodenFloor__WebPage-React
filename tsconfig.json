@@ -1,6 +1,6 @@
 {
    "compilerOptions": {
-      "target": "es5",
+      "target": "ES6",
       "lib": ["dom", "dom.iterable", "esnext"],
       // allows you to have files with the extension .JS in your project
       "allowJs": true,
@@ -26,6 +26,4 @@
    },
    "include": ["src"]
 }
-
-// additional tips:
-// https://github.com/typescript-cheatsheets/react
+ 
