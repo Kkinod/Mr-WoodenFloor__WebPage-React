@@ -9,8 +9,10 @@ module.exports = {
     extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
     root: true,
     env: {
+        browser: true,
         node: true,
         jest: true,
+        es6: true
     },
     ignorePatterns: ['.eslintrc.js', 'jest.config.js', 'jest-e2e.config.js', 'bin/**/*', 'dist/**/*'],
     // what configurations we want to extend
