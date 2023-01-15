@@ -1,31 +1,29 @@
 {
-   "compilerOptions": {
-      "target": "es5",
-      "lib": ["dom", "dom.iterable", "esnext"],
-      // allows you to have files with the extension .JS in your project
-      "allowJs": true,
-      // type declaration files will not be checked, e.g. files from external libraries
-      "skipLibCheck": true,
-      // these two options are for working with modules and default imports
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true,
-      // strict mode
-      "strict": true,
-      // consistency in imported filenames
-      "forceConsistentCasingInFileNames": true,
-      // standard options
-      "noFallthroughCasesInSwitch": true,
-      "module": "esnext",
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      // we want WebPack to be responsible for generating our application, not the TS compiler itself, so we leave "true"
-      "noEmit": true,
-      // enabling react-jsx support
-      "jsx": "react-jsx"
-   },
-   "include": ["src"]
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        // allows you to have files with the extension .JS in your project
+        "allowJs": true,
+        // type declaration files will not be checked, e.g. files from external libraries
+        "skipLibCheck": true,
+        // these two options are for working with modules and default imports
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        // strict mode
+        "strict": true,
+        // consistency in imported filenames
+        "forceConsistentCasingInFileNames": true,
+        // standard options
+        "noFallthroughCasesInSwitch": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        // we want WebPack to be responsible for generating our application, not the TS compiler itself, so we leave "true"
+        "noEmit": true,
+        // enabling react-jsx support
+        "jsx": "react-jsx",
+        "baseUrl": "src"
+    },
+    "include": ["src", "react-app-env.d.ts"]
 }
-
-// additional tips:
-// https://github.com/typescript-cheatsheets/react
