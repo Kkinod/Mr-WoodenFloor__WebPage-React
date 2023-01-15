@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { animationMoveInLeft, animationMoveInRight } from 'assets/styles/animations.styles';
 
 export const HeadingBox = styled.div`
     position: absolute;
@@ -18,7 +19,7 @@ export const HeadingPrimaryMain = styled.span`
     font-weight: 700;
     text-transform: uppercase;
     /* color:  */
-    animation: moveInLeft 1s;
+    animation: ${animationMoveInLeft} 1s;
 `;
 
 export const HeadingPrimarySecond = styled.span`
@@ -26,5 +27,5 @@ export const HeadingPrimarySecond = styled.span`
     font-size: 4rem;
     font-weight: 400;
     text-transform: capitalize;
-    animation: moveInRight 1s;
+    animation: ${animationMoveInRight} 1s;
 `;

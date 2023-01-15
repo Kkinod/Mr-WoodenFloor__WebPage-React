@@ -1,4 +1,4 @@
-import { GlobalStyle } from 'assets/styles/globalStyle';
+import { GlobalStyle } from 'assets/styles/globalStyle.styles';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './views/App';
