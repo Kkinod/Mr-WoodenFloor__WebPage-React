@@ -2,7 +2,7 @@ export interface ITheme {
     theme: typeof theme;
 }
 
-const theme = {
+export const theme = {
     colors: {
         primary: '#c5a47e',
         primaryLight: 'rgb(226, 213, 197)',

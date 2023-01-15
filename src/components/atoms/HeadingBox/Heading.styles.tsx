@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { animationMoveInLeft, animationMoveInRight } from 'assets/styles/animations.styles';
+import { ITheme } from 'assets/styles/theme';
 
 export const HeadingBox = styled.div`
     position: absolute;
@@ -10,7 +11,7 @@ export const HeadingBox = styled.div`
 `;
 
 export const HeadingPrimary = styled.h1`
-    /* color:  */
+    color: ${({ theme }: ITheme): string => theme.colors.white};
 `;
 
 export const HeadingPrimaryMain = styled.span`
@@ -18,7 +19,7 @@ export const HeadingPrimaryMain = styled.span`
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    /* color:  */
+    color: ${({ theme }: ITheme): string => theme.colors.secondary};
     animation: ${animationMoveInLeft} 1s;
 `;
 
