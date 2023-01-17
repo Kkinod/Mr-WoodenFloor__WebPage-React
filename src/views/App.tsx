@@ -1,8 +1,8 @@
 import React from 'react';
-import { Header } from 'components/organism/Header';
+import { HeaderWrapper } from 'components/organism/Header';
 
 const App = (): JSX.Element => {
-    return <Header />;
+    return <HeaderWrapper />;
 };
 
 export default App;

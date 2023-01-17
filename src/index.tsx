@@ -5,7 +5,6 @@ import App from './views/App';
 import { GlobalStyle } from 'assets/styles/globalStyle.styles';
 import { theme } from 'assets/styles/theme';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
-export const Wrapper = styled.div`
+export const Header = styled.header`
     position: relative;
     height: 100vh;
 `;
@@ -15,7 +15,7 @@ export const BgVideo = styled.div`
     overflow: hidden;
 `;
 
-export const BgVideContent = styled.video`
+export const BgVideoContent = styled.video`
     width: 100%;
     height: 100%;
     object-fit: cover;

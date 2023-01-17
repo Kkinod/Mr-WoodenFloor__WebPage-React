@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import { animationMoveInLeft, animationMoveInRight } from 'assets/styles/animations.styles';
 import { ITheme } from 'assets/styles/theme';
 
