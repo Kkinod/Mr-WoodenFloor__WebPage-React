@@ -4,7 +4,7 @@ Użyć:
 - Style Components
 - useReducer
 - otestować
-
+- przeanalizować w React dev toolsach
 
 ===============================================
 
