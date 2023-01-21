@@ -17,26 +17,6 @@ export const Checkbox = styled.input`
     }
 `;
 
-export const Label = styled.label`
-    position: fixed;
-    z-index: 1100;
-    top: 6rem;
-    right: 6rem;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    background-color: ${({ theme }: ITheme): string => theme.colors.primaryLight};
-    text-align: center;
-    box-shadow: 0 1rem 3rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.1);
-
-    &:hover {
-        .navigation__burger-bars::after,
-        .navigation__burger-bars::before {
-            width: 100%;
-        }
-    }
-`;
-
 export const BurgerBars = styled.div`
     position: relative;
     margin-top: 2rem;
@@ -67,6 +47,28 @@ export const BurgerBars = styled.div`
         top: 2rem;
         width: 30%;
         transition: all 0.5s;
+    }
+`;
+
+export const Label = styled.label`
+    position: fixed;
+    z-index: 1100;
+    top: 6rem;
+    right: 6rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: ${({ theme }: ITheme): string => theme.colors.primaryLight};
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.1);
+
+    &:hover {
+        ${BurgerBars}:after {
+            width: 100%;
+        }
+        ${BurgerBars}:before {
+            width: 100%;
+        }
     }
 `;
 
