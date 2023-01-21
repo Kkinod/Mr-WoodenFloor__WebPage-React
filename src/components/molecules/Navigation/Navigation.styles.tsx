@@ -72,7 +72,6 @@ export const NavBackground = styled.div`
         ${({ theme }: ITheme): string => theme.colors.primaryDark}
     );
     transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-    // transform: scale(80);
 `;
 
 export const NavigationWrapper = styled.nav`
@@ -111,24 +110,21 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled.a`
-    &:link,
-    &:visited {
-        position: relative;
-        z-index: 0;
-        color: ${({ theme }: ITheme): string => theme.colors.black};
-        font-size: 3rem;
-        font-weight: 300;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+    position: relative;
+    z-index: 0;
+    color: ${({ theme }: ITheme): string => theme.colors.black};
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
 
     &::after {
         content: '';
         position: absolute;
         z-index: -1;
-        left: 0;
-        bottom: 0;
-        width: 100%;
+        left: -5%;
+        bottom: -15%;
+        width: 110%;
         height: 0;
         background: ${({ theme }: ITheme): string => theme.colors.primary};
         transition: all 0.4s;
@@ -137,7 +133,7 @@ export const NavLink = styled.a`
     &:hover,
     &:active {
         &::after {
-            height: 90%;
+            height: 140%;
         }
     }
 `;
