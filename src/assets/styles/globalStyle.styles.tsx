@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
@@ -34,4 +34,4 @@ export const GlobalStyle = createGlobalStyle`
 	line-height: 1.7;
     box-sizing: border-box;
   }
-`
+`;
