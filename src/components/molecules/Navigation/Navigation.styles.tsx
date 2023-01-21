@@ -4,19 +4,6 @@ import styled from 'styled-components/macro';
 
 export const NavigationContainer = styled.div``;
 
-export const Checkbox = styled.input`
-    display: none;
-
-    &:checked ~ &__background {
-        transform: scale(80);
-    }
-
-    &:checked ~ &__nav {
-        width: 100%;
-        opacity: 1;
-    }
-`;
-
 export const BurgerBars = styled.div`
     position: relative;
     margin-top: 2rem;
@@ -97,6 +84,19 @@ export const NavigationWrapper = styled.nav`
     height: 100vh;
     opacity: 0;
     transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+`;
+
+export const Checkbox = styled.input`
+    display: none;
+
+    &:checked ~ ${NavBackground} {
+        transform: scale(80);
+    }
+
+    &:checked ~ ${NavigationWrapper} {
+        width: 100%;
+        opacity: 1;
+    }
 `;
 
 export const NavList = styled.ul`
