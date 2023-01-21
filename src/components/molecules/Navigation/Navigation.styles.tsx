@@ -1,5 +1,26 @@
 import styled from 'styled-components/macro';
 
+export const NavigationContainer = styled.div`
+    
+`;
+
+
+export const Checkbox = styled.input`
+    
+`;
+
+export const Label = styled.label`
+    
+`;
+
+export const BurgerBars = styled.div`
+    
+`;
+
+export const NavBackground = styled.div`
+    
+`;
+
 export const Navigation = styled.nav`
     position: fixed;
     z-index: 1050;
@@ -15,24 +36,22 @@ export const Navigation = styled.nav`
     
 `;
 
-// export const Navigation = styled.nav`
+export const Navigation = styled.nav`
     
-// `;export const Navigation = styled.nav`
+`;
+
+export const Navigation = styled.nav`
     
-// `;export const Navigation = styled.nav`
+`;
+
+export const Navigation = styled.nav`
     
-// `;export const Navigation = styled.nav`
+`;
+
+export const Navigation = styled.nav`
     
-// `;export const Navigation = styled.nav`
+`;
+
+export const Navigation = styled.nav`
     
-// `;export const Navigation = styled.nav`
-    
-// `;export const Navigation = styled.nav`
-    
-// `;export const Navigation = styled.nav`
-    
-// `;export const Navigation = styled.nav`
-    
-// `;export const Navigation = styled.nav`
-    
-// `;
+`;
