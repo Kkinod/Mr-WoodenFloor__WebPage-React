@@ -88,7 +88,7 @@ export const NavBackground = styled.div`
     // transform: scale(80);
 `;
 
-export const Navigation = styled.nav`
+export const NavigationWrapper = styled.nav`
     position: fixed;
     z-index: 1050;
     top: 0;
