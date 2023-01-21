@@ -1,24 +1,89 @@
+import { ITheme } from 'assets/styles/theme';
+import { position } from 'assets/styles/mixins.styles';
 import styled from 'styled-components/macro';
 
-export const NavigationContainer = styled.div`
-    
-`;
-
+export const NavigationContainer = styled.div``;
 
 export const Checkbox = styled.input`
-    
+    display: none;
+
+    &:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &:checked ~ &__nav {
+        width: 100%;
+        opacity: 1;
+    }
 `;
 
 export const Label = styled.label`
-    
+    position: fixed;
+    z-index: 1100;
+    top: 6rem;
+    right: 6rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: ${({ theme }: ITheme): string => theme.colors.primaryLight};
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.1);
+
+    &:hover {
+        .navigation__burger-bars::after,
+        .navigation__burger-bars::before {
+            width: 100%;
+        }
+    }
 `;
 
 export const BurgerBars = styled.div`
-    
+    position: relative;
+    margin-top: 2rem;
+
+    &,
+    &::before,
+    &::after {
+        display: inline-block;
+        width: 3rem;
+        height: 2px;
+        background-color: ${({ theme }: ITheme): string => theme.colors.greyDark3};
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+    }
+
+    &::before {
+        top: 1rem;
+        width: 60%;
+        transition: all 0.4s;
+    }
+
+    &::after {
+        top: 2rem;
+        width: 30%;
+        transition: all 0.5s;
+    }
 `;
 
 export const NavBackground = styled.div`
-    
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 1000;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        ${({ theme }: ITheme): string => theme.colors.primaryLight},
+        ${({ theme }: ITheme): string => theme.colors.primaryDark}
+    );
+    transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    // transform: scale(80);
 `;
 
 export const Navigation = styled.nav`
@@ -32,26 +97,45 @@ export const Navigation = styled.nav`
     transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 `;
 
-export const Navigation = styled.nav`
-    
+export const NavList = styled.ul`
+    ${position.centerHorizontalVertical}
+    width: 100%;
+    text-align: center;
+    list-style: none;
 `;
 
-export const Navigation = styled.nav`
-    
+export const NavItem = styled.li`
+    margin: 1rem;
 `;
 
-export const Navigation = styled.nav`
-    
-`;
+export const NavLink = styled.a`
+    &:link,
+    &:visited {
+        position: relative;
+        z-index: 0;
+        color: ${({ theme }: ITheme): string => theme.colors.black};
+        font-size: 3rem;
+        font-weight: 300;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 
-export const Navigation = styled.nav`
-    
-`;
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        background: ${({ theme }: ITheme): string => theme.colors.primary};
+        transition: all 0.4s;
+    }
 
-export const Navigation = styled.nav`
-    
-`;
-
-export const Navigation = styled.nav`
-    
+    &:hover,
+    &:active {
+        &::after {
+            height: 90%;
+        }
+    }
 `;
