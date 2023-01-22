@@ -16,16 +16,16 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 62.5%;
    
-    @media ${responsiveSize.tabLand} { 
+    @media ${responsiveSize.tabLand} { // <=1200px
       font-size: 56.25%;	// 9px
     };
 
-    @media ${responsiveSize.tabPort} { 
-      font-size: 50%;	// 9px
+    @media ${responsiveSize.tabPort} { // <=900px
+      font-size: 50%;	// 8 px
     };
 
-    @media ${responsiveSize.bigDesktop} { 
-      font-size: 62.5%;	// 9px
+    @media ${responsiveSize.bigDesktop} { // >=1800
+      font-size: 62.5%;	// 12px
     };
   }
 
