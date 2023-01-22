@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
@@ -14,18 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 62.5%;
-
-	@include respond(tab-land) {	// <=1200px
-		font-size: 56.25%;	// 9px	
-	}
-
-	@include respond(tab-port) {	// <=900px
-		font-size: 50%;	// 8 px
-	}
-
-	@include respond(big-desktop) {	// >=1800
-		font-size: 62.5%;	// 12px
-	}
   }
 
   body {
