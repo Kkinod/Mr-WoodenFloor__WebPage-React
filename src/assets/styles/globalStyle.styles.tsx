@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { responsiveSize } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
@@ -7,31 +8,31 @@ export const GlobalStyle = createGlobalStyle`
   *::after, 
   *::before {
     margin: 0;
-	padding: 0;
+	  padding: 0;
     box-sizing: inherit;
   }
 
   html {
     box-sizing: border-box;
     font-size: 62.5%;
+   
+    @media ${responsiveSize.tabLand} { // <=1200px
+      font-size: 56.25%;	// 9px
+    };
 
-	@include respond(tab-land) {	// <=1200px
-		font-size: 56.25%;	// 9px	
-	}
+    @media ${responsiveSize.tabPort} { // <=900px
+      font-size: 50%;	// 8 px
+    };
 
-	@include respond(tab-port) {	// <=900px
-		font-size: 50%;	// 8 px
-	}
-
-	@include respond(big-desktop) {	// >=1800
-		font-size: 62.5%;	// 12px
-	}
+    @media ${responsiveSize.bigDesktop} { // >=1800
+      font-size: 62.5%;	// 12px
+    };
   }
 
   body {
     font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	line-height: 1.7;
+	  font-weight: 400;
+	  line-height: 1.7;
     box-sizing: border-box;
   }
 `;
