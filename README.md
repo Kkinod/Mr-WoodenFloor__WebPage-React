@@ -5,6 +5,7 @@ Użyć:
 - useReducer
 - otestować
 - przeanalizować w React dev toolsach
+- add responsive
 
 ===============================================
 
