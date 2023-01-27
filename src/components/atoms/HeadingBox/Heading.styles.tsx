@@ -16,8 +16,9 @@ export const HeadingPrimary = styled.h1`
 
 export const HeadingPrimaryMain = styled.span`
     display: block;
+    font-family: 'Lato', sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     color: ${({ theme }: ITheme): string => theme.colors.secondary};
     animation: ${animationMoveInLeft} 1s;
@@ -25,8 +26,8 @@ export const HeadingPrimaryMain = styled.span`
 
 export const HeadingPrimarySecond = styled.span`
     display: block;
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 6rem;
+    font-weight: 500;
     text-transform: capitalize;
     animation: ${animationMoveInRight} 1s;
 `;
