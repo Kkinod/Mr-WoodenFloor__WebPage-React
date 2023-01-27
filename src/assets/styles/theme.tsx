@@ -39,6 +39,8 @@ export const theme = {
     },
 
     size: {
+        // 400px
+        phoneSmall: '25em',
         // 600px
         phone: '37.5em',
         // 900px
@@ -50,9 +52,3 @@ export const theme = {
     },
 };
 
-export const responsiveSize = {
-    phone: `(max-width: ${theme.size.phone})`,
-    tabPort: `(max-width: ${theme.size.tabPort})`,
-    tabLand: `(max-width: ${theme.size.tabLand})`,
-    bigDesktop: `(min-width: ${theme.size.bigDesktop})`,
-};

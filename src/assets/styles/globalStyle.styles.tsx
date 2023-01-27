@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
-import { responsiveSize } from './theme';
+import { responsiveSize } from './mixins.styles';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&family=Lato:wght@300;400;700;900&display=swap');
   
   *, 
   *::after, 
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; // 10px
    
     @media ${responsiveSize.tabLand} { // <=1200px
       font-size: 56.25%;	// 9px
@@ -25,14 +25,14 @@ export const GlobalStyle = createGlobalStyle`
     };
 
     @media ${responsiveSize.bigDesktop} { // >=1800
-      font-size: 62.5%;	// 12px
+      font-size: 75%;	// 12px
     };
   }
 
   body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Garamond', sans-serif;
 	  font-weight: 400;
-	  line-height: 1.7;
+	  line-height: 1.2;
     box-sizing: border-box;
   }
 `;

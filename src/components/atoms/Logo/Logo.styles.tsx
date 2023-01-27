@@ -1,3 +1,4 @@
+import { responsiveSize } from 'assets/styles/mixins.styles';
 import styled from 'styled-components/macro';
 
 export const LogoBox = styled.div`
@@ -7,4 +8,8 @@ export const LogoBox = styled.div`
 
 export const LogoImg = styled.img`
     height: 30rem;
+
+    @media ${responsiveSize.phone} { // <=600px
+        height: 20rem;
+    };
 `;
