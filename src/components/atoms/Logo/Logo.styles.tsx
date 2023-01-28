@@ -9,7 +9,11 @@ export const LogoBox = styled.div`
 export const LogoImg = styled.img`
     height: 30rem;
 
-    @media ${responsiveSize.phone} { // <=600px
+    @media ${responsiveSize.phone} { // <= 600px
+        height: 20rem;
+    };
+
+    @media ${responsiveSize.phoneRotated} { // <= w900px and h600px
         height: 20rem;
     };
 `;

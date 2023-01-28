@@ -12,6 +12,7 @@ export const position = {
 
 export const responsiveSize = {
     phoneSmall: `(max-width: ${theme.size.phoneSmall})`,
+    phoneRotated: `(max-width: ${theme.size.tabPort}) and (max-height: ${theme.size.phone})`,
     phone: `(max-width: ${theme.size.phone})`,
     tabPort: `(max-width: ${theme.size.tabPort})`,
     tabLand: `(max-width: ${theme.size.tabLand})`,
