@@ -23,7 +23,7 @@ const Navigation = (): JSX.Element => {
 
             <NavigationWrapper>
                 <NavList>
-                    <NavItem><NavLink>O Nas</NavLink></NavItem>
+                    <NavItem><NavLink href="#section-about">O Nas</NavLink></NavItem>
                     <NavItem><NavLink>Współpraca</NavLink></NavItem>
                     <NavItem><NavLink>Wybrane Projekty</NavLink></NavItem>
                     <NavItem><NavLink>Opinie Klientów</NavLink></NavItem>
