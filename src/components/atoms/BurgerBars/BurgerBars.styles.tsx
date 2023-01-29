@@ -33,5 +33,3 @@ export const BurgerBars = styled.div`
         transition: all 0.5s;
     }
 `;
-
-

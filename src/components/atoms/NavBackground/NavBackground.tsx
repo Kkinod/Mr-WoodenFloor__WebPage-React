@@ -1,10 +1,8 @@
-import React from 'react'
-import { NavBgc } from './NavBackground.styles'
+import React from 'react';
+import { NavBgc } from './NavBackground.styles';
 
 const NavBackground = (): JSX.Element => {
-  return (
-    <NavBgc />
-  )
-}
+    return <NavBgc />;
+};
 
-export default NavBackground
+export default NavBackground;
