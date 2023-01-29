@@ -1,5 +1,5 @@
-import { ITheme } from 'assets/styles/theme';
 import styled from 'styled-components/macro';
+import { ITheme } from 'assets/styles/theme';
 
 export const HeadingSecondary = styled.h2`
     position: relative;
@@ -10,6 +10,7 @@ export const HeadingSecondary = styled.h2`
         ${({ theme }: ITheme): string => theme.colors.primary},
         ${({ theme }: ITheme): string => theme.colors.secondary}
     );
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-size: 3.5rem;

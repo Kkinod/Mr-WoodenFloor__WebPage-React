@@ -1,13 +1,10 @@
 import React from 'react';
-import { HeaderWrapper } from 'components/organism/Header/Header';
-import Navigation from 'components/organism/Navigation/Navigation';
-
+import { MainPage } from 'components/pages/MainPage';
 
 const App = (): JSX.Element => {
     return (
         <>
-            <Navigation />
-            <HeaderWrapper />
+            <MainPage />
         </>
     );
 };
