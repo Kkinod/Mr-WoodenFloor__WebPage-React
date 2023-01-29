@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderWrapper } from 'components/organism/Header/Header';
-import Navigation from 'components/molecules/Navigation/Navigation';
+import Navigation from 'components/organism/Navigation/Navigation';
 
 
 const App = (): JSX.Element => {
