@@ -38,6 +38,13 @@ export const theme = {
         gutterHorizontal: '6rem',
     },
 
+    // 0 - 400px:      Small Phone
+    // 0 - 600px:      Phone
+    // 600 - 900px:    Tablet
+    // 900 - 1200px:   Tablet landscape
+    // [1200 - 1800]   --Normal styles
+    // 1800px + :      Big desktop
+
     size: {
         // 400px
         phoneSmall: '25em',
@@ -51,4 +58,3 @@ export const theme = {
         bigDesktop: '112.5em',
     },
 };
-

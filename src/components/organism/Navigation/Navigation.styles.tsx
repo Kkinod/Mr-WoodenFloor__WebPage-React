@@ -1,9 +1,6 @@
 import styled from 'styled-components/macro';
-import BurgerBarsWrapper from 'components/atoms/BurgerBars/BurgerBars';
 
 export const NavigationContainer = styled.div``;
-
-export const BurgerBars = styled(BurgerBarsWrapper)``;
 
 export const NavigationWrapper = styled.nav`
     position: fixed;
