@@ -1,0 +1,1 @@
+export const HeadingSecondary = styled.h2``
