@@ -4,7 +4,7 @@ import { DefaultPhoto } from 'components/atoms/CompositionPhotos/CompositionPhot
 export const WrapperComposition = styled.div`
     position: relative;
 
-    &:hover &${DefaultPhoto}:not(:hover) {
+    &:hover ${DefaultPhoto}:not(:hover) {
         transform: scale(0.9);
     }
 `;
