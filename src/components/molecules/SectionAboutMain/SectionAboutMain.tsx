@@ -5,11 +5,12 @@ import thirdPhoto from 'assets/img/3.jpg';
 import { Col1of2, Row } from 'components/atoms/Grid/Grid.styles';
 import { WrapperComposition } from './SectionAboutMain.styles';
 import { FirstPhoto, SecondPhoto, ThirdPhoto } from 'components/atoms/CompositionPhotos/CompositionPhotos.styles';
+import { HeadingTertiarySectionAbout } from 'components/atoms/HeadingTertiarySectionAbout/HeadingTertiarySectionAbout.styles';
+import { labels } from 'views/labels';
+import { Paragraph } from 'components/atoms/Paragraph/Paragraph.styles';
 
 const SectionAboutMain = (): JSX.Element => {
     const [hoveredPhoto, setHoveredPhoto] = useState<string | null>(null);
-    console.log(hoveredPhoto);
-    
 
     return (
         <Row>
@@ -19,24 +20,27 @@ const SectionAboutMain = (): JSX.Element => {
                         src={process.env.PUBLIC_URL + firstPhoto}
                         alt="Wood floor 1"
                         onMouseEnter={(): void => setHoveredPhoto('first')}
-                        // onMouseLeave={(): void => setHoveredPhoto(null)}
                         hovered={hoveredPhoto === 'first'}
                     />
                     <SecondPhoto
                         src={process.env.PUBLIC_URL + secondPhoto}
                         alt="Wood floor 2"
                         onMouseEnter={(): void => setHoveredPhoto('second')}
-                        // onMouseLeave={(): void => setHoveredPhoto(null)}
                         hovered={hoveredPhoto === 'second'}
                     />
                     <ThirdPhoto
                         src={process.env.PUBLIC_URL + thirdPhoto}
                         alt="Wood floor 3"
                         onMouseEnter={(): void => setHoveredPhoto('third')}
-                        // onMouseLeave={(): void => setHoveredPhoto(null)}
                         hovered={hoveredPhoto === 'third'}
                     />
                 </WrapperComposition>
+            </Col1of2>
+            <Col1of2>
+                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiaryFirst}</HeadingTertiarySectionAbout>
+                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
+                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiarySecond}</HeadingTertiarySectionAbout>
+                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
             </Col1of2>
         </Row>
     );
