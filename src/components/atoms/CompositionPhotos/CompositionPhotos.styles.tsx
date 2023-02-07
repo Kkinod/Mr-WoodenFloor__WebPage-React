@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { ITheme } from 'assets/styles/theme';
 
-// Poprawić błąd z tym, że po cofnięciu myszki element się nie cofa
 interface IDefaultPhotoProps {
     hovered: boolean;
 }

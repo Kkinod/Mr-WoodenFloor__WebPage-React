@@ -21,6 +21,7 @@ const SectionAboutMain = (): JSX.Element => {
                         src={process.env.PUBLIC_URL + firstPhoto}
                         alt="Wood floor 1"
                         onMouseEnter={(): void => setHoveredPhoto('first')}
+                        onMouseLeave={(): void => setHoveredPhoto('first')}
                         hovered={hoveredPhoto === 'first'}
                     />
                     <SecondPhoto
