@@ -5,6 +5,6 @@ export const Paragraph = styled.p`
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
 
     &:not(:last-child) {
-		margin-bottom: 3rem;
-	}
+        margin-bottom: 3rem;
+    }
 `;

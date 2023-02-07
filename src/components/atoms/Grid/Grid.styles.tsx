@@ -11,8 +11,6 @@ export const Row = styled.div`
     &:not(:last-child) {
         margin-bottom: ${({ theme }: ITheme): string => theme.grid.gutterVertical};
     }
-
-
 `;
 
 const Col = styled.div`
