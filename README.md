@@ -1,3 +1,5 @@
+// Za pamięci: dodać obraz zamiast video w header
+
 Web Mr. Woddenfloor written in react:
 
 Użyć:
