@@ -4,16 +4,15 @@ import { Card } from 'components/atoms/CardsComponents/Card.styles';
 import { ImgCard } from 'components/atoms/CardsComponents/CardImg.styles';
 import { HeadingTertiary } from 'components/atoms/Headings/Headings.styles';
 import { Small } from 'components/atoms/Headings/Small.styles';
-
-export const Row1of2 = styled.div``;
+import { CardTextWrapper } from 'components/atoms/CardsComponents/CardTextWrapper.styles';
 
 export const CardWithHover = styled(Card)`
     &:hover ${ImgCard} {
         transform: scale(1.4);
     }
 
-    &:hover ${ImgCard}::before {
-        background-color: rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.2);
+    &:hover ${CardTextWrapper}::before {
+        background-color: rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0);
     }
 `;
 
