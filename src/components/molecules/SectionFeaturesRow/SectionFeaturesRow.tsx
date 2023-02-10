@@ -1,9 +1,9 @@
 import React from 'react';
-import { CardWithHover, Row1of2 } from './SectionFeaturesRow.styles';
-
+import { CardWithHover, Row1of2, SmallTitle, Title } from './SectionFeaturesRow.styles';
 
 import { ImgCard } from 'components/atoms/CardsComponents/CardImg.styles';
 import { CardTextWrapper } from 'components/atoms/CardsComponents/CardTextWrapper.styles';
+import { BtnCardPrimary, BtnCardSecondary } from 'components/atoms/Buttons/BtnsCard.styles';
 
 interface ISectionFeaturesRowProps {
     firstPhoto: {
@@ -30,13 +30,18 @@ const SectionFeaturesRow = ({
     thirdPhoto,
     fourthPhoto,
 }: ISectionFeaturesRowProps): JSX.Element => {
-
     return (
         <Row1of2>
             <CardWithHover>
                 <ImgCard src={firstPhoto.src} alt={firstPhoto.alt} />
                 <CardTextWrapper>
-                    
+                    <BtnCardPrimary>
+                        <Title>
+                            <SmallTitle>{'Idealne schody i podłogi'}</SmallTitle>
+                            {'Architekci & Projektanci'}
+                        </Title>
+                    </BtnCardPrimary>
+                    <BtnCardSecondary>{"Współpracuj z Mr. WoddenFloor"}</BtnCardSecondary>
                 </CardTextWrapper>
             </CardWithHover>
             <CardWithHover>

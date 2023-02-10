@@ -3,12 +3,14 @@ import { ITheme } from 'assets/styles/theme';
 
 export const CardTextWrapper = styled.div`
     position: absolute;
+    margin: 1rem;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 10%;
 
     &::before {

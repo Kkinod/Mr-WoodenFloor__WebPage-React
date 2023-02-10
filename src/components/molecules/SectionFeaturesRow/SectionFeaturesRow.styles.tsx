@@ -2,6 +2,8 @@ import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 import { Card } from 'components/atoms/CardsComponents/Card.styles';
 import { ImgCard } from 'components/atoms/CardsComponents/CardImg.styles';
+import { HeadingTertiary } from 'components/atoms/Headings/Headings.styles';
+import { Small } from 'components/atoms/Headings/Small.styles';
 
 export const Row1of2 = styled.div``;
 
@@ -13,4 +15,16 @@ export const CardWithHover = styled(Card)`
     &:hover ${ImgCard}::before {
         background-color: rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.2);
     }
+`;
+
+export const Title = styled(HeadingTertiary)`
+    display: flex;
+    flex-direction: column;
+    color: ${({ theme }: ITheme): string => theme.colors.white};
+    font-size: 3rem;
+    cursor: pointer;
+`;
+
+export const SmallTitle = styled(Small)`
+    text-transform: uppercase;
 `;

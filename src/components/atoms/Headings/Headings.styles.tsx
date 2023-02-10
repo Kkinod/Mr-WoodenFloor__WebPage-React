@@ -37,5 +37,5 @@ export const HeadingSecondary = styled.h2`
 export const HeadingTertiary = styled.h3`
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 `;
