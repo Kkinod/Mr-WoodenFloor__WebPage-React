@@ -28,6 +28,26 @@ const SectionFeatures = (): JSX.Element => {
                     description={labels.sectionFeatures.secondDescription}
                 />
             </Row1of2>
+            <Row1of2>
+                <SectionFeaturesRow
+                    photo={{
+                        src: LivingRoom,
+                        alt: 'Living Room',
+                    }}
+                    title={labels.sectionFeatures.firstTitle}
+                    smallTitle={labels.sectionFeatures.firstSmallTitle}
+                    description={labels.sectionFeatures.firstDescription}
+                />
+                <SectionFeaturesRow
+                    photo={{
+                        src: Stairs,
+                        alt: 'Stairs',
+                    }}
+                    title={labels.sectionFeatures.secondTitle}
+                    smallTitle={labels.sectionFeatures.secondSmallTitle}
+                    description={labels.sectionFeatures.secondDescription}
+                />
+            </Row1of2>
         </Section>
     );
 };
