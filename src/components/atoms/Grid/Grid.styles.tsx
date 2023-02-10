@@ -1,8 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 
-// NOT(:last-child) NIE DZIAŁA
-
 export const Row = styled.div`
     max-width: ${({ theme }: ITheme): string => theme.grid.gridWidth};
     margin: 0 auto;

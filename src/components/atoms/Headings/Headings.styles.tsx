@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const HeadingSecondary = styled.h2`
     position: relative;
@@ -18,6 +19,14 @@ export const HeadingSecondary = styled.h2`
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     transition: all 0.2s;
+
+    @media ${responsiveSize.tabPort} {
+        font-size: 3rem;
+    }
+
+    @media ${responsiveSize.phone} {
+        font-size: 2.5rem;
+    }
 
     &:hover {
         transform: scale(1.1);
