@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
-import { ITheme } from 'assets/styles/theme';
 import { Section } from 'components/atoms/Section/Section.styles';
+import { ITheme } from 'assets/styles/theme';
 
-export const Section_About = styled(Section)`
-    padding: 15rem 0 25rem;
+export const Section_Offers = styled(Section)`
+    padding: 10rem 0;
     background-color: ${({ theme }: ITheme): string => theme.colors.greyLight1};
 `;

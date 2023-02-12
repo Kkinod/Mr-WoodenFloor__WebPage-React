@@ -39,3 +39,8 @@ export const HeadingTertiary = styled.h3`
     font-weight: 700;
     /* text-transform: uppercase; */
 `;
+
+export const HeadingQuaternary = styled.h3`
+    font-size: 2.8rem;
+    font-weight: 300;
+`;

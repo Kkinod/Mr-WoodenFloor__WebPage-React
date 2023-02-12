@@ -33,4 +33,8 @@ export const labels = {
         fourthSmallTitle: 'Wartość z współpracy z nami',
         fourthDescription: 'Partner, któremu możesz zaufać',
     },
+
+    sectionOffers: {
+        heading: 'Wybrane Projekty',
+    }
 };
