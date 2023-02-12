@@ -26,7 +26,7 @@ export const CardHeading = styled(HeadingQuaternary)`
 `;
 
 const CardHeadingSpan = styled.span`
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     box-decoration-break: clone;
 `;
 
@@ -63,6 +63,15 @@ export const BackSide = styled(Card)`
     );
 `;
 
+export const BackSideDetails = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 90%;
+`;
+
 export const CardWrapper = styled.div`
     position: relative;
     height: 52rem;
@@ -74,5 +83,25 @@ export const CardWrapper = styled.div`
 
     &:hover ${BackSide} {
         transform: rotateY(0);
+    }
+`;
+
+export const Ul = styled.ul`
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+`;
+
+export const Li = styled.li`
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
+    }
+
+    &:last-child {
+        margin-bottom: 10rem;
     }
 `;

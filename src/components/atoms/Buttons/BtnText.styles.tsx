@@ -7,7 +7,7 @@ export const BtnText = styled.a`
     &::after {
         content: '\u27F6';
         color: ${({ theme }: ITheme): string => theme.colors.primary};
-        margin-left: 0.5rem;
+        margin-left: 0.3rem;
     }
 
     &::before {
@@ -20,7 +20,7 @@ export const BtnText = styled.a`
         width: 100%;
         height: 0;
         background-color: ${({ theme }: ITheme): string => theme.colors.primary};
-        transition: all 0.2s;
+        transition: all 0.5s;
     }
 
     &:link,
@@ -31,7 +31,7 @@ export const BtnText = styled.a`
         border-bottom: 2px solid ${({ theme }: ITheme): string => theme.colors.primary};
         font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
         text-decoration: none;
-        transition: all 0.3s;
+        transition: all 0.2s;
     }
 
     &:hover {

@@ -12,3 +12,4 @@ export const NavigationWrapper = styled.nav`
     opacity: 0;
     transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 `;
+
