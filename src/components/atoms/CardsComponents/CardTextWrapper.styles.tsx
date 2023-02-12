@@ -3,7 +3,6 @@ import { ITheme } from 'assets/styles/theme';
 
 export const CardTextWrapper = styled.div`
     position: absolute;
-    margin: 1rem;
     top: 0;
     left: 0;
     bottom: 0;
@@ -20,7 +19,7 @@ export const CardTextWrapper = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.4);
-        transition: all 1.5s;
+        background-color: rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.5);
+        transition: all 2.5s;
     }
 `;

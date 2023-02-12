@@ -17,18 +17,18 @@ interface ISectionFeaturesRowProps {
 
 const SectionFeaturesRow = ({ photo, title, smallTitle, description }: ISectionFeaturesRowProps): JSX.Element => {
     return (
-            <CardWithHover>
-                <ImgCard src={photo.src} alt={photo.alt} />
-                <CardTextWrapper>
-                    <BtnCardPrimary>
-                        <Title>
-                            <SmallTitle>{smallTitle}</SmallTitle>
-                            {title}
-                        </Title>
-                    </BtnCardPrimary>
-                    <BtnCardSecondary>{description}</BtnCardSecondary>
-                </CardTextWrapper>
-            </CardWithHover>
+        <CardWithHover>
+            <ImgCard src={photo.src} alt={photo.alt} />
+            <CardTextWrapper>
+                <BtnCardPrimary>
+                    <Title>
+                        <SmallTitle>{smallTitle}</SmallTitle>
+                        {title}
+                    </Title>
+                </BtnCardPrimary>
+                <BtnCardSecondary>{description}</BtnCardSecondary>
+            </CardTextWrapper>
+        </CardWithHover>
     );
 };
 

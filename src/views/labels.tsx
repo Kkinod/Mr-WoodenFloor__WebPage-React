@@ -25,12 +25,12 @@ export const labels = {
         secondSmallTitle: 'Idealne schody i podłogi',
         secondDescription: 'Unikalna kolekcja schodów Mr. Wooden',
 
-        thirdTitle: 'Klienci Indywidualni',
-        thirdSmallTitle: 'Zjawiskowe drewniane podłogi i wykończenia',
-        thirdDescription: 'Współpracuj z Mr. WoodenFloor',
+        thirdTitle: 'Współpraca komercyjna',
+        thirdSmallTitle: 'Niezwykłe podłogi z drewna twardego',
+        thirdDescription: 'Ogromne możliwości',
 
-        fourthTitle: 'Klienci Indywidualni',
-        fourthSmallTitle: 'Zjawiskowe drewniane podłogi i wykończenia',
-        fourthDescription: 'Współpracuj z Mr. WoodenFloor',
-    }
+        fourthTitle: 'Deweloperzy & Instalatorzy',
+        fourthSmallTitle: 'Wartość z współpracy z nami',
+        fourthDescription: 'Partner, któremu możesz zaufać',
+    },
 };

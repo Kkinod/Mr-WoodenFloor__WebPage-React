@@ -3,6 +3,8 @@ import React from 'react';
 import { Row1of2, Section } from './SectionFeatures.styles';
 import LivingRoom from 'assets/img/House-big.jpg';
 import Stairs from 'assets/img/Stairs-big.jpg';
+import CompanyHall from 'assets/img/Company-big.jpg';
+import Workshop from 'assets/img/Builders-big.jpg';
 import { labels } from 'views/labels';
 
 const SectionFeatures = (): JSX.Element => {
@@ -31,21 +33,21 @@ const SectionFeatures = (): JSX.Element => {
             <Row1of2>
                 <SectionFeaturesRow
                     photo={{
-                        src: LivingRoom,
-                        alt: 'Living Room',
+                        src: CompanyHall,
+                        alt: 'Company Hall',
                     }}
-                    title={labels.sectionFeatures.firstTitle}
-                    smallTitle={labels.sectionFeatures.firstSmallTitle}
-                    description={labels.sectionFeatures.firstDescription}
+                    title={labels.sectionFeatures.thirdTitle}
+                    smallTitle={labels.sectionFeatures.thirdSmallTitle}
+                    description={labels.sectionFeatures.thirdDescription}
                 />
                 <SectionFeaturesRow
                     photo={{
-                        src: Stairs,
-                        alt: 'Stairs',
+                        src: Workshop,
+                        alt: 'Workshop',
                     }}
-                    title={labels.sectionFeatures.secondTitle}
-                    smallTitle={labels.sectionFeatures.secondSmallTitle}
-                    description={labels.sectionFeatures.secondDescription}
+                    title={labels.sectionFeatures.fourthTitle}
+                    smallTitle={labels.sectionFeatures.fourthSmallTitle}
+                    description={labels.sectionFeatures.fourthDescription}
                 />
             </Row1of2>
         </Section>
