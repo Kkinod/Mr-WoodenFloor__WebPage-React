@@ -1,11 +1,12 @@
-import SectionFeaturesRow from 'components/molecules/SectionFeaturesRow/SectionFeaturesRow';
 import React from 'react';
-import { Row1of2, Section } from './SectionFeatures.styles';
+import SectionFeaturesRow from 'components/molecules/SectionFeaturesRow/SectionFeaturesRow';
+import { Row1of2 } from './SectionFeatures.styles';
 import LivingRoom from 'assets/img/House-big.jpg';
 import Stairs from 'assets/img/Stairs-big.jpg';
 import CompanyHall from 'assets/img/Company-big.jpg';
 import Workshop from 'assets/img/Builders-big.jpg';
 import { labels } from 'views/labels';
+import { Section } from 'components/atoms/Section/Section.styles';
 
 const SectionFeatures = (): JSX.Element => {
     return (

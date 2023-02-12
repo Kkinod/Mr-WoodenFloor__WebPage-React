@@ -5,7 +5,7 @@ interface IListItem {
     children: JSX.Element;
 }
 
-const ListItem: React.FC<IListItem> = ({ children }): JSX.Element => {
+const ListItem = ({ children }: IListItem): JSX.Element => {
     return <Item>{children}</Item>;
 };
 

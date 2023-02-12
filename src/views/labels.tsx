@@ -33,4 +33,17 @@ export const labels = {
         fourthSmallTitle: 'Wartość z współpracy z nami',
         fourthDescription: 'Partner, któremu możesz zaufać',
     },
+
+    sectionOffers: {
+        heading: 'Wybrane Projekty',
+        firtstCard: {
+            firstDescription: 'Szybka realizacja',
+            secondDescription: 'Krótkie terminy',
+            thirdDescription: 'Wysoka jakość materiałów',
+            fourthDescription: 'Unikatowy styl',
+            fifthDecription: 'Najlepsze drewno',
+        },
+        buttonCardText: 'Zamów teraz!',
+        buttonMainText: 'Odkryj całą ofertę',
+    },
 };
