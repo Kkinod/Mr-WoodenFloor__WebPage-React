@@ -1,12 +1,11 @@
 
 Web Mr. Woddenfloor written in react:
 
-Użyć:
+Used:
 - Style Components
 - useReducer
-- otestować
-- przeanalizować w React dev toolsach
-- add responsive
+- tests
+- add responsive (work in progress)
 
 ===============================================
 
