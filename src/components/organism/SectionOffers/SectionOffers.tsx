@@ -1,13 +1,13 @@
+import React from 'react';
+import { BtnText } from 'components/atoms/Buttons/BtnText.styles';
+import { BtnWrapper, Section_Offers } from './SectionOffers.styles';
+import { Row } from 'components/atoms/Grid/Grid.styles';
 import CardProjects from 'components/molecules/CardProjects/CardProjects';
 import CenterHeadingSecondary from 'components/molecules/CenterHeadingSecondary/CenterHeadingSecondary';
-import React from 'react';
-import { labels } from 'views/labels';
-import { BtnWrapper, Section_Offers } from './SectionOffers.styles';
-import LivingRoom from 'assets/img/House-big.jpg';
 import CompanyHall from 'assets/img/Company-big.jpg';
+import LivingRoom from 'assets/img/House-big.jpg';
 import Workshop from 'assets/img/Builders-big.jpg';
-import { Row } from 'components/atoms/Grid/Grid.styles';
-import { BtnText } from 'components/atoms/Buttons/BtnText.styles';
+import { labels } from 'views/labels';
 
 const SectionOffers = (): JSX.Element => {
     return (
@@ -42,7 +42,9 @@ const SectionOffers = (): JSX.Element => {
                     buttonText={labels.sectionOffers.buttonCardText}
                 />
             </Row>
-            <BtnWrapper><BtnText href="#">{labels.sectionOffers.buttonMainText}</BtnText></BtnWrapper>
+            <BtnWrapper>
+                <BtnText href="#">{labels.sectionOffers.buttonMainText}</BtnText>
+            </BtnWrapper>
         </Section_Offers>
     );
 };

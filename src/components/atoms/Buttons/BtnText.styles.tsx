@@ -31,7 +31,7 @@ export const BtnText = styled.a`
         border-bottom: 2px solid ${({ theme }: ITheme): string => theme.colors.primary};
         font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
         text-decoration: none;
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 
     &:hover {
