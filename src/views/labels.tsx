@@ -46,4 +46,8 @@ export const labels = {
         buttonCardText: 'Zamów teraz!',
         buttonMainText: 'Odkryj całą ofertę',
     },
+
+    sectionReviews: {
+        heading: 'Opinie naszych klientów',
+    }
 };
