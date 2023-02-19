@@ -1,33 +1,5 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
-import contactImg from 'assets/img/contactUs-big.jpg';
-
-export const ContactBox = styled.div`
-    width: 100rem;
-    height: 50rem;
-    background-image: linear-gradient(
-            105deg,
-            rgba(${({ theme }: ITheme): string => theme.colors.whiteRgb}, 0.9) 0%,
-            rgba(${({ theme }: ITheme): string => theme.colors.whiteRgb}, 0.9) 50%,
-            transparent 50%
-        ),
-        url(${contactImg});
-    background-position: center;
-    background-size: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 1.5rem 4rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.4);
-`;
-
-export const ContactBoxForm = styled.div`
-    width: 50%;
-    padding: 6rem;
-`;
-
-export const Form = styled.form``;
-
-export const FormHeading = styled.div`
-    margin-bottom: 4rem;
-`;
 
 export const FormGroup = styled.div`
     &:not(:last-child) {
@@ -51,10 +23,10 @@ export const InputContact = styled.input`
     border: none;
     border-bottom: 3px solid transparent;
     border-radius: 2px;
-    background-color: rgba(var(--color-white-rgb), 0.8);
-    color: ingherit;
+    background-color: rgba(${({ theme }: ITheme): string => theme.colors.whiteRgb}, 0.8);
+    color: inherit;
     font-family: inherit;
-    font-size: var(--default-font-size);
+    font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
     transition: all 0.3s;
 
     &:focus {
@@ -72,9 +44,8 @@ export const InputContact = styled.input`
     }
 
     &:placeholder-shown + ${LabelContact} {
-		opacity: 1;
-		visibility: hidden;
-		transform: translateY(-4rem);
-	}
+        opacity: 1;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
 `;
-

@@ -54,4 +54,11 @@ export const labels = {
         reviewText:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, laborum',
     },
+
+    sectionContact: {
+        headingText: 'Napisz do nas',
+        placeholderNameText: 'Full Name',
+        inputNameId: 'name'
+    }
+    
 };
