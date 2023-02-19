@@ -19,3 +19,9 @@ export const ShadowBg = styled.div`
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.9), transparent);
 `;
+
+export const ReviewsContainer = styled.div`
+/* position: relative;
+display: block;
+box-sizing: border-box; */
+`
