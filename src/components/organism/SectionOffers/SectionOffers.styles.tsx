@@ -8,7 +8,6 @@ export const Section_Offers = styled(Section)`
 `;
 
 export const BtnWrapper = styled.div`
-text-align: center;
-margin-bottom: 18rem;
-
-`
+    text-align: center;
+    margin-bottom: 18rem;
+`;

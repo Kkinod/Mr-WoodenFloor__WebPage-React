@@ -1,7 +1,6 @@
 import React from 'react';
 import { CenterText } from 'components/atoms/CenterText/CenterText.styles';
 import { HeadingSecondary } from 'components/atoms/Headings/Headings.styles';
-import SectionAboutMain from '../SectionAboutMain/SectionAboutMain';
 
 interface ICenterHeadingSecondary {
     headingText: string;
