@@ -23,3 +23,7 @@ export const ShadowBg = styled.div`
         transparent
     );
 `;
+
+export const ReviewsContainer = styled.div`
+    margin: 0 2%;
+`;
