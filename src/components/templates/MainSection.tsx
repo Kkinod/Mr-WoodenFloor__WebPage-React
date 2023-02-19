@@ -5,15 +5,14 @@ import SectionFeatures from 'components/organism/SectionFeatures/SectionFeatures
 import SectionOffers from 'components/organism/SectionOffers/SectionOffers';
 import SectionReviews from 'components/organism/SectionReviews/SectionReviews';
 
-
-const MainSection = ( ): JSX.Element => {
+const MainSection = (): JSX.Element => {
     return (
-    <Main>
-        <SectionAbout />
-        <SectionFeatures />
-        <SectionOffers />
-        <SectionReviews />
-    </Main>
+        <Main>
+            <SectionAbout />
+            <SectionFeatures />
+            <SectionOffers />
+            <SectionReviews />
+        </Main>
     );
 };
 
