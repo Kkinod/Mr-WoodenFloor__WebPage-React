@@ -1,12 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 
-export const FormGroup = styled.div`
-    &:not(:last-child) {
-        margin-bottom: 2rem;
-    }
-`;
-
 export const LabelContact = styled.label`
     display: block;
     margin-top: 0.7rem;

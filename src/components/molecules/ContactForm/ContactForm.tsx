@@ -1,5 +1,6 @@
 import React from 'react';
-import { FormGroup, InputContact, LabelContact } from './ContactForm.styles';
+import { FormGroup } from 'components/atoms/FormGroup/FormGroup.styles';
+import { InputContact, LabelContact } from './ContactForm.styles';
 
 interface IContactForm {
     placeholderText: string;

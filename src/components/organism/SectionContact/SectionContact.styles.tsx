@@ -6,3 +6,8 @@ export const Section_Contact = styled(Section)`
     padding: 15rem 0;
     background-color: ${({ theme }: ITheme): string => theme.colors.white};
 `;
+
+export const FormGre = styled.div`
+
+
+`

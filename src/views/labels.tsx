@@ -57,8 +57,11 @@ export const labels = {
 
     sectionContact: {
         headingText: 'Napisz do nas',
+        formAction: '#',
         placeholderNameText: 'Full Name',
-        inputNameId: 'name'
+        inputNameId: 'name',
+        placeholderEmailText: 'Email adres',
+        inputEmailId: 'email',
     }
     
 };

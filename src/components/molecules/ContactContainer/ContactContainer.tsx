@@ -5,17 +5,18 @@ import { ContactBox, ContactBoxForm, Form, FormHeading } from './ContactContaine
 interface IContactContainerProps {
     children: ReactNode;
     headingText: string;
+    formAction: string;
 }
 
-const ContactContainer: React.FC<IContactContainerProps> = ({ children, headingText }): JSX.Element => {
+const ContactContainer: React.FC<IContactContainerProps> = ({ children, headingText, formAction }): JSX.Element => {
     return (
         <ContactBox>
             <ContactBoxForm>
-                <Form action="#">
+                <Form action={formAction}>
                     <FormHeading>
                         <HeadingSecondary>{headingText}</HeadingSecondary>
-                        {children}
                     </FormHeading>
+                    {children}
                 </Form>
             </ContactBoxForm>
         </ContactBox>
