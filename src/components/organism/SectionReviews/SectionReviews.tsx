@@ -8,14 +8,31 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const SectionReviews = (): JSX.Element => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2500,
+    };
+
     return (
         <Section_Reviews id="section-reviews">
             <ShadowBg />
             <CenterHeadingSecondary headingText={labels.sectionReviews.heading} />
-            <ReviewsContainer>
+
+            {/* <ReviewsContainer> */}
+            <Slider {...settings}>
                 <CardCustomerReview />
                 <CardCustomerReview />
-            </ReviewsContainer>
+                <CardCustomerReview />
+                <CardCustomerReview />
+                <CardCustomerReview />
+                <CardCustomerReview />
+            </Slider>
+            {/* </ReviewsContainer> */}
         </Section_Reviews>
     );
 };

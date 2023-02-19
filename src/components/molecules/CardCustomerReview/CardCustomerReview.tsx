@@ -12,7 +12,7 @@ const CardCustomerReview = (): JSX.Element => {
                 </ReviewShape>
                 <ReviewBoxText>
                     <ReviewHeading>Zakochałam się w schodach które zrobili w moim domu</ReviewHeading>
-                    <ReviewText>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure.</ReviewText>
+                    <ReviewText>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, laborum</ReviewText>
                 </ReviewBoxText>
             </ReviewCard>
         </ReviewBox>
