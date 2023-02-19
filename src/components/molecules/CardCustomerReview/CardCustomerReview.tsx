@@ -1,18 +1,38 @@
 import React from 'react';
-import { ReviewBox, ReviewCaption, ReviewCard, ReviewImg, ReviewShape, ReviewBoxText, ReviewHeading, ReviewText } from './CardCustomerReview.styles';
-import imgKid from 'assets/img/kid-small.jpg'
+import {
+    ReviewBox,
+    ReviewCaption,
+    ReviewCard,
+    ReviewImg,
+    ReviewShape,
+    ReviewBoxText,
+    ReviewHeading,
+    ReviewText,
+} from './CardCustomerReview.styles';
 
-const CardCustomerReview = (): JSX.Element => {
+interface ICardCustomerReviewProps {
+    imgCustomer: string;
+    customerName: string;
+    headingOfReview: string;
+    reviewText: string;
+}
+
+const CardCustomerReview: React.FC<ICardCustomerReviewProps> = ({
+    imgCustomer,
+    customerName,
+    headingOfReview,
+    reviewText,
+}): JSX.Element => {
     return (
         <ReviewBox>
             <ReviewCard>
                 <ReviewShape>
-                    <ReviewImg src={imgKid} alt="Smiling kid"/>
-                    <ReviewCaption>Jon Doe</ReviewCaption>
+                    <ReviewImg src={imgCustomer} alt="Customer photo" />
+                    <ReviewCaption>{customerName}</ReviewCaption>
                 </ReviewShape>
                 <ReviewBoxText>
-                    <ReviewHeading>Zakochałam się w schodach które zrobili w moim domu</ReviewHeading>
-                    <ReviewText>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, laborum</ReviewText>
+                    <ReviewHeading>{headingOfReview}</ReviewHeading>
+                    <ReviewText>{reviewText}</ReviewText>
                 </ReviewBoxText>
             </ReviewCard>
         </ReviewBox>
