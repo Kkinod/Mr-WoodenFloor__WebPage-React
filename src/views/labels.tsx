@@ -62,6 +62,8 @@ export const labels = {
         inputNameId: 'name',
         placeholderEmailText: 'Email adres',
         inputEmailId: 'email',
+        firstLabelRadioText: 'Klient indywidualny',
+        secondLabelRadioText: 'Klient biznesowy',
     }
     
 };

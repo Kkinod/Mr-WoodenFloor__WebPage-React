@@ -5,12 +5,16 @@ import ContactContainer from 'components/molecules/ContactContainer/ContactConta
 import ContactForm from 'components/molecules/ContactForm/ContactForm';
 import { labels } from 'views/labels';
 import ContactRadioContainer from 'components/molecules/ContactRadioContainer/ContactRadioContainer';
+import ButtonFormGroup from 'components/molecules/ButtonFormGroup/ButtonFormGroup';
 
 const SectionContact = (): JSX.Element => {
     return (
         <Section_Contact id="section-contact">
             <Row>
-                <ContactContainer headingText={labels.sectionContact.headingText} formAction={labels.sectionContact.formAction}>
+                <ContactContainer
+                    headingText={labels.sectionContact.headingText}
+                    formAction={labels.sectionContact.formAction}
+                >
                     <ContactForm
                         placeholderText={labels.sectionContact.placeholderNameText}
                         inputId={labels.sectionContact.inputNameId}
@@ -19,9 +23,11 @@ const SectionContact = (): JSX.Element => {
                         placeholderText={labels.sectionContact.placeholderEmailText}
                         inputId={labels.sectionContact.inputEmailId}
                     />
-
-                    <ContactRadioContainer />
-
+                    <ContactRadioContainer
+                        firstLabelRadioText={labels.sectionContact.firstLabelRadioText}
+                        secondLabelRadioText={labels.sectionContact.secondLabelRadioText}
+                    />
+                    <ButtonFormGroup />
                 </ContactContainer>
             </Row>
         </Section_Contact>
