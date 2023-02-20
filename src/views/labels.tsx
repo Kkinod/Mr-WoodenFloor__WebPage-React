@@ -51,6 +51,19 @@ export const labels = {
         heading: 'Opinie naszych klientów',
         customerName: 'Jon Doe',
         headingOfReview: 'Zakochałam się w schodach które zrobili w moim domu',
-        reviewText: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, laborum',
+        reviewText:
+            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit totam quo iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, laborum',
+    },
+
+    sectionContact: {
+        headingText: 'Napisz do nas',
+        formAction: '#',
+        placeholderNameText: 'Full Name',
+        inputNameId: 'name',
+        placeholderEmailText: 'Email adres',
+        inputEmailId: 'email',
+        firstLabelRadioText: 'Klient indywidualny',
+        secondLabelRadioText: 'Klient biznesowy',
     }
+    
 };
