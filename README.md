@@ -3,8 +3,8 @@ Web Mr. Woddenfloor written in react:
 
 Used:
 - Style Components
-- useReducer
-- tests
+- no external libraries (exception: slider)
+- tests (work in progress)
 - add responsive (work in progress)
 
 ===============================================
