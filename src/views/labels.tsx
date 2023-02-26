@@ -64,6 +64,8 @@ export const labels = {
         inputEmailId: 'email',
         firstLabelRadioText: 'Klient indywidualny',
         secondLabelRadioText: 'Klient biznesowy',
+        btnFormText: 'Do formularza',
+        btnHref: 'h',
     }
     
 };
