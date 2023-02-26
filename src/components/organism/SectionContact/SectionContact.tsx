@@ -27,7 +27,7 @@ const SectionContact = (): JSX.Element => {
                         firstLabelRadioText={labels.sectionContact.firstLabelRadioText}
                         secondLabelRadioText={labels.sectionContact.secondLabelRadioText}
                     />
-                    <ButtonFormGroup />
+                    <ButtonFormGroup btnText={labels.sectionContact.btnFormText} btnHref={labels.sectionContact.btnHref} />
                 </ContactContainer>
             </Row>
         </Section_Contact>
