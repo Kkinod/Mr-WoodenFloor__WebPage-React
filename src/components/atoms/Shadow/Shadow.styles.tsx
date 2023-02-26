@@ -7,5 +7,9 @@ export const Shadow = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.9), rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.5));
+    background-image: linear-gradient(
+        to bottom,
+        rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.9),
+        rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.5)
+    );
 `;

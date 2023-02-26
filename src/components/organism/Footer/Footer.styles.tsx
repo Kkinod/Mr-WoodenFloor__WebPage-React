@@ -11,3 +11,13 @@ export const FooterSection = styled.footer`
     background-size: cover;
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
 `;
+
+export const FooterLogoBox = styled.div`
+    margin-bottom: 8rem;
+    text-align: center;
+`;
+
+export const FooterLogo = styled.img`
+    width: 20rem;
+    height: auto;
+`;
