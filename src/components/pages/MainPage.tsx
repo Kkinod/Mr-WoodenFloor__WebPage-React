@@ -1,7 +1,8 @@
 import React from 'react';
 import { HeaderWrapper } from 'components/organism/Header/Header';
-import Navigation from 'components/organism/Navigation/Navigation';
+import Footer from 'components/organism/Footer/Footer';
 import MainSection from 'components/templates/MainSection';
+import Navigation from 'components/organism/Navigation/Navigation';
 
 export const MainPage = (): JSX.Element => {
     return (
@@ -9,6 +10,7 @@ export const MainPage = (): JSX.Element => {
             <Navigation />
             <HeaderWrapper />
             <MainSection />
+            <Footer />
         </>
     );
 };
