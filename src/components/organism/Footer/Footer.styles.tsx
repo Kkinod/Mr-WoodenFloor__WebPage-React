@@ -57,3 +57,11 @@ export const FooterListItemLink = styled.a`
         transform: rotate(5deg) scale(1.3);
     }
 `;
+
+export const FooterCopyright = styled.div`
+    width: 80%;
+    padding-top: 2rem;
+    border-top: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
+    color: ${({ theme }: ITheme): string => theme.colors.white};
+    float: right;
+`;

@@ -77,5 +77,9 @@ export const labels = {
         itemLinkHrefSecond: '',
         itemLinkHrefThird: '',
         itemLinkHrefFourth: '',
+        buildBy: 'Build by ',
+        hrefForLink: 'https://github.com/Kkinod',
+        kkinod: 'Kkinod ',
+        copyrightText: '. © Copyright  by Kkinod'
     },
 };

@@ -1,6 +1,7 @@
 import { Shadow } from 'components/atoms/Shadow/Shadow.styles';
 import React from 'react';
 import {
+    FooterCopyright,
     FooterList,
     FooterListItem,
     FooterListItemLink,
@@ -38,6 +39,11 @@ const Footer = (): JSX.Element => {
                             </FooterListItem>
                         </FooterList>
                     </FooterNavigation>
+                </Col1of2>
+                <Col1of2>
+                <FooterCopyright>
+                    {labels.footer.buildBy}<FooterListItemLink href={labels.footer.hrefForLink}>{labels.footer.kkinod}</FooterListItemLink>{labels.footer.copyrightText}
+                </FooterCopyright>
                 </Col1of2>
             </Row>
         </FooterSection>
