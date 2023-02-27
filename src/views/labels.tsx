@@ -66,6 +66,20 @@ export const labels = {
         secondLabelRadioText: 'Klient biznesowy',
         btnFormText: 'Do formularza',
         btnHref: 'h',
-    }
-    
+    },
+
+    footer: {
+        itemLinkTextFirst: 'Firma',
+        itemLinkTextSecond: 'Kontakt',
+        itemLinkTextThird: 'Kariera',
+        itemLinkTextFourth: 'Polityka prywatności',
+        itemLinkHrefFirst: '',
+        itemLinkHrefSecond: '',
+        itemLinkHrefThird: '',
+        itemLinkHrefFourth: '',
+        buildBy: 'Build by ',
+        hrefForLink: 'https://github.com/Kkinod',
+        kkinod: 'Kkinod ',
+        copyrightText: '. © Copyright  by Kkinod'
+    },
 };
