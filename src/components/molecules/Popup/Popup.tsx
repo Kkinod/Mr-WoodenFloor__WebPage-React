@@ -1,8 +1,12 @@
 import React from 'react'
+import { PopupContainer } from './Popup.styles'
 
-const Popup = () => {
+const Popup = (): JSX.Element => {
   return (
-    <div>Popup</div>
+    <PopupContainer>
+
+
+    </PopupContainer>
   )
 }
 
