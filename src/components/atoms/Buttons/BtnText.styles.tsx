@@ -4,8 +4,11 @@ import { ITheme } from 'assets/styles/theme';
 export const BtnText = styled.a`
     position: relative;
     background-color: ${({ theme }: ITheme): string => theme.colors.primary};
-    padding: 0.5rem 1.25rem;
+    padding: 1rem 2.25rem;
     border-radius: 100px;
+    overflow: hidden;
+    border-top: 1px solid rgba(${({ theme }: ITheme): string => theme.colors.primaryLightRgb}, 0.25);
+    border-bottom: 1px solid rgba(${({ theme }: ITheme): string => theme.colors.primaryLightRgb}, 0.25);
 /* 
     display: flex;
     justify-content: center;
@@ -30,6 +33,20 @@ export const BtnText = styled.a`
         transition: all 0.5s;
     } */
 
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 1000000;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(${({ theme }: ITheme): string => theme.colors.primaryLightRgb}, 0.25), transparent);
+        transform: skewX(45deg) translateX(0);
+        transition: 0.5s;
+        /* background: linear-gradient(to left, rgba(255,255,255, 0.15), transparent) */
+    }
+
     &:link,
     &:visited {
         display: inline-block;
@@ -50,9 +67,10 @@ export const BtnText = styled.a`
             color: ${({ theme }: ITheme): string => theme.colors.white};
         }
 
-        /* &::before {
-            height: 100%;
-        } */
+        &::before {
+            /* height: 100%; */
+            transform: skewX(45deg) translateX(200%);
+        }
     }
 
     &:active,
