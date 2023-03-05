@@ -1,9 +1,10 @@
 import React from 'react';
 import Bedroom from 'assets/img/room3-small.jpg';
 import LivingRoom from 'assets/img/room4-small.jpg';
-import { LeftBox, MainText, PopupContainer, PopupContent, PopupImg, RightBox, Subtitle, Title } from './Popup.styles';
 import { BtnText } from 'components/atoms/Buttons/BtnText.styles';
 import { CloseIcon } from 'components/atoms/CloseIcon/CloseIcon.styles';
+import { LeftBox, MainText, PopupContainer, PopupContent, PopupImg, RightBox, Subtitle, Title } from './Popup.styles';
+import { labels } from 'views/labels';
 
 const Popup = (): JSX.Element => {
     return (
@@ -15,16 +16,11 @@ const Popup = (): JSX.Element => {
                 </LeftBox>
                 <RightBox>
                     <CloseIcon href="#section-projects">&times;</CloseIcon>
-                    <Title>Rozpocznij budowę z Nami</Title>
-                    <Subtitle>Ważne &ndash; Zapraszamy do zapoznania się z Naszą ofertą</Subtitle>
-                    <MainText>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis suscipit maxime
-                        repellat possimus obcaecati magnam ex cumque, excepturi iste? Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Doloribus, qui. Quibusdam quam, labore tempore eos nulla saepe
-                        soluta nemo iure!
-                    </MainText>
+                    <Title>{labels.popup.title}</Title>
+                    <Subtitle>{labels.popup.subtitle}</Subtitle>
+                    <MainText>{labels.popup.mainText}</MainText>
                     <div>
-                        <BtnText href="#">Zarezerwuj termin</BtnText>
+                        <BtnText href="#">{labels.popup.btnText}</BtnText>
                     </div>
                 </RightBox>
             </PopupContent>

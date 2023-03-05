@@ -80,6 +80,14 @@ export const labels = {
         buildBy: 'Build by ',
         hrefForLink: 'https://github.com/Kkinod',
         kkinod: 'Kkinod ',
-        copyrightText: '. © Copyright  by Kkinod'
+        copyrightText: '. © Copyright  by Kkinod',
+    },
+
+    popup: {
+        title: 'Rozpocznij budowę z Nami',
+        subtitle: 'Zapraszamy do zapoznania się z Naszą ofertą',
+        mainText:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis suscipit maxime repellat possimus obcaecati magnam ex cumque, excepturi iste? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, qui. Quibusdam quam, labore tempore eos nulla saepe soluta nemo iure!',
+        btnText: 'Zarezerwuj termin',
     },
 };
