@@ -43,7 +43,7 @@ const SectionAboutMain = (): JSX.Element => {
                 <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
                 <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiarySecond}</HeadingTertiarySectionAbout>
                 <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
-                <BtnText href="#">{labels.sectionAbout.btnText}</BtnText>
+                <BtnText href="#section-about">{labels.sectionAbout.btnText}</BtnText>
             </Col1of2>
         </Row>
     );

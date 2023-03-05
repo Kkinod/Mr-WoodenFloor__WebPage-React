@@ -58,24 +58,6 @@ export const RightBox = styled.div`
     padding: 3rem 5rem;
 `;
 
-export const CloseIcon = styled.a`
-    &:link,
-    &:visited {
-        position: absolute;
-        top: 1rem;
-        right: 2rem;
-        display: inline-block;
-        color: ${({ theme }: ITheme): string => theme.colors.greyDark};
-        font-size: 3rem;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
-
-    &:hover {
-        color: ${({ theme }: ITheme): string => theme.colors.primary};
-    }
-`;
-
 export const Title = styled(HeadingSecondary)`
     margin-bottom: 1.5rem;
 `;

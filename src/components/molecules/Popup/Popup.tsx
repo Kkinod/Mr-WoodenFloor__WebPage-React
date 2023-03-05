@@ -1,18 +1,9 @@
 import React from 'react';
 import Bedroom from 'assets/img/room3-small.jpg';
 import LivingRoom from 'assets/img/room4-small.jpg';
-import {
-    CloseIcon,
-    LeftBox,
-    MainText,
-    PopupContainer,
-    PopupContent,
-    PopupImg,
-    RightBox,
-    Subtitle,
-    Title,
-} from './Popup.styles';
+import { LeftBox, MainText, PopupContainer, PopupContent, PopupImg, RightBox, Subtitle, Title } from './Popup.styles';
 import { BtnText } from 'components/atoms/Buttons/BtnText.styles';
+import { CloseIcon } from 'components/atoms/CloseIcon/CloseIcon.styles';
 
 const Popup = (): JSX.Element => {
     return (
