@@ -1,10 +1,12 @@
 import React from 'react'
-import { PopupContainer } from './Popup.styles'
+import { PopupContainer, PopupContent } from './Popup.styles'
 
 const Popup = (): JSX.Element => {
   return (
     <PopupContainer>
-
+<PopupContent>
+    
+</PopupContent>
 
     </PopupContainer>
   )
