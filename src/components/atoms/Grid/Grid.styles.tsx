@@ -2,9 +2,11 @@ import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 
 export const Row = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: ${({ theme }: ITheme): string => theme.grid.gridWidth};
     margin: 0 auto;
-    display: flex;
 
     &:not(:last-child) {
         margin-bottom: ${({ theme }: ITheme): string => theme.grid.gutterVertical};
