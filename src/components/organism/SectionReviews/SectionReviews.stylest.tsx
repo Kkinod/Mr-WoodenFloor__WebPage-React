@@ -5,11 +5,15 @@ import imgReview from 'assets/img/bgi-reviews-big.jpg';
 
 export const Section_Reviews = styled(Section)`
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15rem 0;
     background-image: url(${imgReview});
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 `;
 
 export const ShadowBg = styled.div`
@@ -25,5 +29,5 @@ export const ShadowBg = styled.div`
 `;
 
 export const ReviewsContainer = styled.div`
-    margin: 0 2%;
+    width: 100vw;
 `;
