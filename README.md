@@ -6,6 +6,7 @@ Used:
 - no external libraries (exception: slider)
 - tests (work in progress)
 - add responsive (work in progress)
+- storybook
 
 ===============================================
 
