@@ -32,7 +32,6 @@ export const ReviewCard = styled.div`
     padding-left: 9rem;
     border-radius: 1rem;
     box-shadow: 0 3rem 6rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.1);
-    /* background-color: ${({ theme }: ITheme): string => theme.colors.white}; */
     background-color: rgba(${({ theme }: ITheme): string => theme.colors.whiteRgb}, 0.8);
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
     transform: skewX(-12deg);
