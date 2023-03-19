@@ -16,6 +16,13 @@ const SectionAboutMain = (): JSX.Element => {
     return (
         <Row>
             <Col1of2>
+                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiaryFirst}</HeadingTertiarySectionAbout>
+                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
+                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiarySecond}</HeadingTertiarySectionAbout>
+                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
+                <BtnText href="#section-about">{labels.sectionAbout.btnText}</BtnText>
+            </Col1of2>
+            <Col1of2>
                 <WrapperComposition>
                     <FirstPhoto
                         src={process.env.PUBLIC_URL + firstPhoto}
@@ -38,13 +45,7 @@ const SectionAboutMain = (): JSX.Element => {
                     />
                 </WrapperComposition>
             </Col1of2>
-            <Col1of2>
-                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiaryFirst}</HeadingTertiarySectionAbout>
-                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
-                <HeadingTertiarySectionAbout>{labels.sectionAbout.headingTertiarySecond}</HeadingTertiarySectionAbout>
-                <Paragraph>{labels.sectionAbout.paragraph}</Paragraph>
-                <BtnText href="#section-about">{labels.sectionAbout.btnText}</BtnText>
-            </Col1of2>
+            
         </Row>
     );
 };
