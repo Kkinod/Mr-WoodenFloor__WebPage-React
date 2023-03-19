@@ -8,8 +8,17 @@ export const Row = styled.div`
     max-width: ${({ theme }: ITheme): string => theme.grid.gridWidth};
     margin: 0 auto;
 
+    @media ${responsiveSize.tabPort} {
+        flex-direction: column;
+        max-width: 50rem;
+    }
+
     &:not(:last-child) {
         margin-bottom: ${({ theme }: ITheme): string => theme.grid.gutterVertical};
+
+        @media ${responsiveSize.tabPort} {
+            margin-bottom: ${({ theme }: ITheme): string => theme.grid.gutterVerticalSmall};
+        }
     }
 `;
 
@@ -19,12 +28,12 @@ const Col = styled.div`
 
         @media ${responsiveSize.tabPort} {
             margin-right: 0;
+            margin-bottom: ${({ theme }: ITheme): string => theme.grid.gutterVerticalSmall};
         }
     }
 
     @media ${responsiveSize.tabPort} {
         width: 100% !important;
-        background-color: red;
     } ;
 `;
 

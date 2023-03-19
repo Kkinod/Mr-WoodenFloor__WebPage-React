@@ -34,6 +34,7 @@ export const theme = {
     grid: {
         gridWidth: '114rem',
         gutterVertical: '8rem',
+        gutterVerticalSmall: '6rem',
         // Gap between elements
         gutterHorizontal: '6rem',
     },
