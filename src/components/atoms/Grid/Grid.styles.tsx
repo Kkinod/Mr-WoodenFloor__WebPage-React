@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const Row = styled.div`
     display: flex;
@@ -15,7 +16,16 @@ export const Row = styled.div`
 const Col = styled.div`
     &:not(:last-child) {
         margin-right: ${({ theme }: ITheme): string => theme.grid.gutterHorizontal};
+
+        @media ${responsiveSize.tabPort} {
+            margin-right: 0;
+        }
     }
+
+    @media ${responsiveSize.tabPort} {
+        width: 100% !important;
+        background-color: red;
+    } ;
 `;
 
 export const Col1of2 = styled(Col)`
