@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row } from 'components/atoms/Grid/Grid.styles';
 import { SectionContactRow, Section_Contact } from './SectionContact.styles';
 import ContactContainer from 'components/molecules/ContactContainer/ContactContainer';
 import ContactForm from 'components/molecules/ContactForm/ContactForm';

@@ -11,6 +11,7 @@ export const Row = styled.div`
     @media ${responsiveSize.tabPort} {
         flex-direction: column;
         max-width: 50rem;
+        padding: 0 3rem;
     }
 
     &:not(:last-child) {
