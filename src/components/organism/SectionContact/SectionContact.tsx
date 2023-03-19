@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row } from 'components/atoms/Grid/Grid.styles';
-import { Section_Contact } from './SectionContact.styles';
+import { SectionContactRow, Section_Contact } from './SectionContact.styles';
 import ContactContainer from 'components/molecules/ContactContainer/ContactContainer';
 import ContactForm from 'components/molecules/ContactForm/ContactForm';
 import { labels } from 'views/labels';
@@ -10,7 +10,7 @@ import ButtonFormGroup from 'components/molecules/ButtonFormGroup/ButtonFormGrou
 const SectionContact = (): JSX.Element => {
     return (
         <Section_Contact id="section-contact">
-            <Row>
+            <SectionContactRow>
                 <ContactContainer
                     headingText={labels.sectionContact.headingText}
                     formAction={labels.sectionContact.formAction}
@@ -29,7 +29,7 @@ const SectionContact = (): JSX.Element => {
                     />
                     <ButtonFormGroup btnText={labels.sectionContact.btnFormText} btnHref={labels.sectionContact.btnHref} />
                 </ContactContainer>
-            </Row>
+            </SectionContactRow>
         </Section_Contact>
     );
 };
