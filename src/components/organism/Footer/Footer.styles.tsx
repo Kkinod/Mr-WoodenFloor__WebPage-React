@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 import footerBgImg from 'assets/img/bed-middle.jpg';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const FooterSection = styled.footer`
     position: relative;
@@ -10,6 +11,10 @@ export const FooterSection = styled.footer`
     background-position: center;
     background-size: cover;
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
+
+    @media ${responsiveSize.tabPort} {
+       padding: 8rem 0;
+    }
 `;
 
 export const FooterLogoBox = styled.div`
@@ -26,6 +31,11 @@ export const FooterNavigation = styled.div`
     display: inline-block;
     padding-top: 2rem;
     border-top: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
+
+    @media ${responsiveSize.tabPort} {
+        width: 100%;
+        text-align: center;
+    }
 `;
 
 export const FooterList = styled.ul`
@@ -64,4 +74,9 @@ export const FooterCopyright = styled.div`
     border-top: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
     color: ${({ theme }: ITheme): string => theme.colors.white};
     float: right;
+
+    @media ${responsiveSize.tabPort} {
+        width: 100%;
+        text-align: center;
+    }
 `;
