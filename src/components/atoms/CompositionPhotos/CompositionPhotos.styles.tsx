@@ -20,22 +20,44 @@ export const DefaultPhoto = styled.img<IDefaultPhotoProps>`
         z-index: 20;
         transform: scale(1.05) translateY(-0.5rem);
         box-shadow: 0 2.5rem 4rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.5);
+
+        @media ${responsiveSize.tabPort} {
+            transform: scale(1.25) translateY(-0.5rem);
+    }
     `}
 
-
+    @media ${responsiveSize.tabPort} {
+        position: relative;
+        width: 33%;
+    }
 `;
 
 export const FirstPhoto = styled(DefaultPhoto)`
     left: 0rem;
     top: -2rem;
+
+    @media ${responsiveSize.tabPort} {
+        top: 2rem;
+        left: 5rem;
+    }
 `;
 
 export const SecondPhoto = styled(DefaultPhoto)`
     right: 1rem;
     top: 2rem;
+
+    @media ${responsiveSize.tabPort} {
+        right: 0;
+        top: -1rem;
+    }
 `;
 
 export const ThirdPhoto = styled(DefaultPhoto)`
     left: 10%;
     top: 15rem;
+
+    @media ${responsiveSize.tabPort} {
+        left: -5rem;
+        top: 2rem;
+    }
 `;
