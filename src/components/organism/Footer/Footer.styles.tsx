@@ -13,13 +13,17 @@ export const FooterSection = styled.footer`
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
 
     @media ${responsiveSize.tabPort} {
-       padding: 8rem 0;
+        padding: 8rem 0;
     }
 `;
 
 export const FooterLogoBox = styled.div`
     margin-bottom: 8rem;
     text-align: center;
+
+    @media ${responsiveSize.tabPort} {
+        margin-bottom: 4rem;
+    }
 `;
 
 export const FooterLogo = styled.img`

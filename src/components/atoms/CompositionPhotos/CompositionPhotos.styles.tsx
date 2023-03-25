@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 interface IDefaultPhotoProps {
     hovered: boolean;
@@ -20,6 +21,8 @@ export const DefaultPhoto = styled.img<IDefaultPhotoProps>`
         transform: scale(1.05) translateY(-0.5rem);
         box-shadow: 0 2.5rem 4rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.5);
     `}
+
+
 `;
 
 export const FirstPhoto = styled(DefaultPhoto)`
