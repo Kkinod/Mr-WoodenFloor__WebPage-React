@@ -29,6 +29,10 @@ export const FooterLogoBox = styled.div`
 export const FooterLogo = styled.img`
     width: 20rem;
     height: auto;
+
+    @media ${responsiveSize.tabPort} {
+        width: 25rem;
+    }
 `;
 
 export const FooterNavigation = styled.div`

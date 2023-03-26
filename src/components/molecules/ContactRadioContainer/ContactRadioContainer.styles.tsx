@@ -1,9 +1,15 @@
+import { responsiveSize } from 'assets/styles/mixins.styles';
 import { ITheme } from 'assets/styles/theme';
 import styled from 'styled-components/macro';
 
 export const FormRadioWrapper = styled.div`
     display: inline-block;
     width: 49%;
+
+    @media ${responsiveSize.phone} {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
 `;
 
 export const RadioButton = styled.span`

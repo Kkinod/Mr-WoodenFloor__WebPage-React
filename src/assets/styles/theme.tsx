@@ -51,6 +51,8 @@ export const theme = {
         phoneSmall: '25em',
         // 600px
         phone: '37.5em',
+        // 800px
+        tabPort800: '50em',
         // 900px
         tabPort: '56.25em',
         // 1200px
