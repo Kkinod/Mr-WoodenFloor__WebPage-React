@@ -1,6 +1,6 @@
+import { HeadingQuaternary } from 'components/atoms/Headings/Headings.styles';
 import { responsiveSize } from 'assets/styles/mixins.styles';
 import { ITheme } from 'assets/styles/theme';
-import { HeadingQuaternary } from 'components/atoms/Headings/Headings.styles';
 import styled from 'styled-components/macro';
 
 export const Card = styled.div`
@@ -170,6 +170,6 @@ export const Li = styled.li`
     }
 
     @media ${responsiveSize.tabPort} {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
+    }
 `;

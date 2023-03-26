@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 import { HeadingTertiary } from 'components/atoms/Headings/Headings.styles';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const ReviewBox = styled.div`
     margin: 0 3.5rem;
@@ -31,6 +32,7 @@ export const ReviewCard = styled.div`
     padding: 6rem;
     padding-left: 9rem;
     border-radius: 1rem;
+    margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.1);
     background-color: rgba(${({ theme }: ITheme): string => theme.colors.whiteRgb}, 0.8);
     font-size: ${({ theme }: ITheme): string => theme.fontSize.defaultFontSize};
@@ -45,6 +47,18 @@ export const ReviewCard = styled.div`
         transform: scale(1);
         filter: blur(3px) brightness(80%);
     }
+
+    @media ${responsiveSize.phoneSmall} {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+        transform: skewX(0);
+    }
+
+    @media ${responsiveSize.phone} {
+        width: 100%;
+        transform: skewX(0);
+    }
 `;
 
 export const ReviewShape = styled.figure`
@@ -55,10 +69,18 @@ export const ReviewShape = styled.figure`
     shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     clip-path: circle(50% at 50% 50%);
+
+    @media ${responsiveSize.phone} {
+        transform: translateX(-3rem) skewX(0);
+    }
 `;
 
 export const ReviewBoxText = styled.div`
     transform: skewX(12deg);
+
+    @media ${responsiveSize.phone} {
+        transform: skewX(0);
+    }
 `;
 
 export const ReviewHeading = styled(HeadingTertiary)`
