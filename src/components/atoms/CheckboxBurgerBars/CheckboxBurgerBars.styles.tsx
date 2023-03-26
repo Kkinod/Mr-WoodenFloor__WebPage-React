@@ -11,6 +11,6 @@ export const Checkbox = styled.input`
 
     &:checked ~ ${NavigationWrapper} {
         width: 100%;
-        opacity: 1;
+        visibility: visible;
     }
 `;

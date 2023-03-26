@@ -18,16 +18,16 @@ const Navigation = (): JSX.Element => {
                         <NavigationLink href="#section-about">{labels.navigationList.aboutUs}</NavigationLink>
                     </ListItem>
                     <ListItem>
-                        <NavigationLink href="#section-about">{labels.navigationList.cooperation}</NavigationLink>
+                        <NavigationLink href="#section-features">{labels.navigationList.cooperation}</NavigationLink>
                     </ListItem>
                     <ListItem>
-                        <NavigationLink href="#section-about">{labels.navigationList.selectedProjects}</NavigationLink>
+                        <NavigationLink href="#section-offers">{labels.navigationList.selectedProjects}</NavigationLink>
                     </ListItem>
                     <ListItem>
-                        <NavigationLink href="#section-about">{labels.navigationList.customersOpinion}</NavigationLink>
+                        <NavigationLink href="#section-reviews">{labels.navigationList.customersOpinion}</NavigationLink>
                     </ListItem>
                     <ListItem>
-                        <NavigationLink href="#section-about">{labels.navigationList.writeToUs}</NavigationLink>
+                        <NavigationLink href="#section-contact">{labels.navigationList.writeToUs}</NavigationLink>
                     </ListItem>
                 </NavList>
             </NavigationWrapper>
