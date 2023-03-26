@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const LabelContact = styled.label`
     display: block;
@@ -41,5 +42,9 @@ export const InputContact = styled.input`
         opacity: 1;
         visibility: hidden;
         transform: translateY(-4rem);
+    }
+
+    @media ${responsiveSize.phone} {
+        width: 100%;
     }
 `;

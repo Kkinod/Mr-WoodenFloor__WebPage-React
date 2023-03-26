@@ -13,15 +13,11 @@ import { ReviewsContainer, Section_Reviews, ShadowBg } from './SectionReviews.st
 
 const SectionReviews = (): JSX.Element => {
     const settings = {
-        // dots: true,
-        // centerMode: true,
-        // centerPadding: "10px",
-
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 1500,
         responsive: [
             {
