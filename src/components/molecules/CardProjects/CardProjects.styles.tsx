@@ -1,3 +1,4 @@
+import { responsiveSize } from 'assets/styles/mixins.styles';
 import { ITheme } from 'assets/styles/theme';
 import { HeadingQuaternary } from 'components/atoms/Headings/Headings.styles';
 import styled from 'styled-components/macro';
@@ -13,6 +14,13 @@ export const Card = styled.div`
     backface-visibility: hidden;
     transition: all 0.8s ease;
     overflow: hidden;
+
+    @media ${responsiveSize.tabPort} {
+        position: relative;
+        height: auto;
+        border-radius: 0;
+        box-shadow: 0 0 0;
+    }
 `;
 
 export const CardHeading = styled(HeadingQuaternary)`
@@ -23,6 +31,11 @@ export const CardHeading = styled(HeadingQuaternary)`
     color: ${({ theme }: ITheme): string => theme.colors.white};
     text-transform: uppercase;
     text-align: right;
+
+    @media ${responsiveSize.tabPort} {
+        width: 60%;
+        font-size: 3.8rem;
+    }
 `;
 
 const CardHeadingSpan = styled.span`
@@ -40,6 +53,10 @@ export const CardHeadingSpanFirst = styled(CardHeadingSpan)`
 
 export const FrontSide = styled(Card)`
     background-color: ${({ theme }: ITheme): string => theme.colors.white};
+
+    @media ${responsiveSize.tabPort} {
+        background-color: ${({ theme }: ITheme): string => theme.colors.primaryDark};
+    }
 `;
 
 export const SideFrontPictureFirst = styled.div<{ imageUrl?: string }>`
@@ -47,11 +64,16 @@ export const SideFrontPictureFirst = styled.div<{ imageUrl?: string }>`
     background-size: cover;
     background-blend-mode: screen;
     background-image: linear-gradient(
-            to right bottom,
+            to right top,
             ${({ theme }: ITheme): string => theme.colors.primaryLight},
             ${({ theme }: ITheme): string => theme.colors.primaryDark}
         ),
         url(${({ imageUrl }: { imageUrl?: string }): string | undefined => imageUrl});
+
+    @media ${responsiveSize.tabPort} {
+        height: 25rem;
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 75%);
+    }
 `;
 
 export const BackSide = styled(Card)`
@@ -61,6 +83,16 @@ export const BackSide = styled(Card)`
         ${({ theme }: ITheme): string => theme.colors.primaryLight},
         ${({ theme }: ITheme): string => theme.colors.primaryDark}
     );
+
+    @media ${responsiveSize.tabPort} {
+        transform: rotateY(0);
+        clip-path: polygon(0 -10%, 100% 0, 100% 100%, 0% 100%);
+        background-image: linear-gradient(
+            to top,
+            ${({ theme }: ITheme): string => theme.colors.primaryLight},
+            ${({ theme }: ITheme): string => theme.colors.primaryDark}
+        );
+    }
 `;
 
 export const BackSideDetails = styled.div`
@@ -70,6 +102,15 @@ export const BackSideDetails = styled.div`
     text-align: center;
     transform: translate(-50%, -50%);
     width: 90%;
+
+    @media ${responsiveSize.tabPort} {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding-bottom: 2rem;
+    }
 `;
 
 export const CardWrapper = styled.div`
@@ -79,10 +120,19 @@ export const CardWrapper = styled.div`
 
     &:hover ${FrontSide} {
         transform: rotateY(-180deg);
+
+        @media ${responsiveSize.tabPort} {
+            transform: rotateY(0);
+        }
     }
 
     &:hover ${BackSide} {
         transform: rotateY(0);
+    }
+
+    @media ${responsiveSize.tabPort} {
+        height: auto;
+        box-shadow: 0 1.5rem 4rem rgba(${({ theme }: ITheme): string => theme.colors.blackRgb}, 0.15);
     }
 `;
 
@@ -99,9 +149,27 @@ export const Li = styled.li`
 
     &:not(:last-child) {
         border-bottom: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
+
+        @media ${responsiveSize.tabPort} {
+            border-bottom: 2px solid ${({ theme }: ITheme): string => theme.colors.primary};
+        }
     }
 
     &:last-child {
         margin-bottom: 10rem;
+
+        @media ${responsiveSize.tabPort} {
+            margin-bottom: 5rem;
+        }
     }
+
+    &:first-child {
+        @media ${responsiveSize.tabPort} {
+            margin-top: 5rem;
+        }
+    }
+
+    @media ${responsiveSize.tabPort} {
+            font-size: 2rem;
+        }
 `;

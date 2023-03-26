@@ -37,8 +37,8 @@ export const FirstPhoto = styled(DefaultPhoto)`
     top: -2rem;
 
     @media ${responsiveSize.tabPort} {
-        top: 2rem;
         left: 5rem;
+        top: 2rem;
     }
 `;
 
