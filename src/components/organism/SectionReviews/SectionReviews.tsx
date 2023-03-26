@@ -14,7 +14,7 @@ import { ReviewsContainer, Section_Reviews, ShadowBg } from './SectionReviews.st
 const SectionReviews = (): JSX.Element => {
     const settings = {
         // dots: true,
-        centerMode: true,
+        // centerMode: true,
         // centerPadding: "10px",
 
         infinite: true,
@@ -22,7 +22,7 @@ const SectionReviews = (): JSX.Element => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 1500,
         responsive: [
             {
                 breakpoint: 2100,
@@ -33,17 +33,17 @@ const SectionReviews = (): JSX.Element => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
                 },
             },
             {
