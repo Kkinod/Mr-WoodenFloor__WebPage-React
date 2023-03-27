@@ -5,7 +5,7 @@ Used:
 - Style Components
 - no external libraries (exception: slider)
 - tests (work in progress)
-- add responsive (work in progress)
+- add responsive 
 - storybook (work in progress)
 
 ===============================================
