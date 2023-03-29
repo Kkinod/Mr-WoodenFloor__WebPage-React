@@ -42,7 +42,8 @@ const Footer = (): JSX.Element => {
                 </Col1of2>
                 <Col1of2>
                 <FooterCopyright>
-                    {labels.footer.buildBy}<FooterListItemLink href={labels.footer.hrefForLink}>{labels.footer.kkinod}</FooterListItemLink>{labels.footer.copyrightText}
+                    {labels.footer.buildBy}<FooterListItemLink href={labels.footer.hrefForLink}>{labels.footer.kkinod}</FooterListItemLink>
+                    {/* {labels.footer.copyrightText} */}
                 </FooterCopyright>
                 </Col1of2>
             </Row>

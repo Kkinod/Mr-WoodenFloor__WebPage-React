@@ -1,12 +1,17 @@
 import React from 'react';
 import { BurgerBars } from 'components/atoms/BurgerBars/BurgerBars.styles';
-import CheckboxBurgerBars from 'components/atoms/CheckboxBurgerBars/CheckboxBurgerBars';
 import LabelBurgerBars from 'components/atoms/LabelBurgerBars/LabelBurgerBars';
+import { Checkbox } from 'components/atoms/CheckboxBurgerBars/CheckboxBurgerBars.styles';
 
-const BurgerBarsContainer = (): JSX.Element => {
+interface IBurgerBarsContainer {
+    checked: boolean;
+    setIsChecked: () => void;
+}
+
+const BurgerBarsContainer = ({ checked, setIsChecked }: IBurgerBarsContainer): JSX.Element => {
     return (
         <>
-            <CheckboxBurgerBars />
+            <Checkbox type="checkbox" id="navi-toggle" checked={checked} onChange={setIsChecked} />
             <LabelBurgerBars>
                 <BurgerBars />
             </LabelBurgerBars>
