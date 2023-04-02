@@ -47,6 +47,8 @@ export const theme = {
     // 1800px + :      Big desktop
 
     size: {
+        // 320px
+        phoneSmall320px: '20em',
         // 400px
         phoneSmall: '25em',
         // 600px
