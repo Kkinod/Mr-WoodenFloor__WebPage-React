@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const CloseIcon = styled.a`
     &:link,
@@ -12,6 +13,10 @@ export const CloseIcon = styled.a`
         font-size: 3rem;
         text-decoration: none;
         transition: all 0.2s;
+
+        @media ${responsiveSize.phone} {
+            color: ${({ theme }: ITheme): string => theme.colors.white};
+        }
     }
 
     &:hover {

@@ -1,6 +1,7 @@
 import styled from 'styled-components/macro';
 import { ITheme } from 'assets/styles/theme';
 import { HeadingSecondary, HeadingTertiary } from 'components/atoms/Headings/Headings.styles';
+import { responsiveSize } from 'assets/styles/mixins.styles';
 
 export const PopupContent = styled.div`
     position: absolute;
@@ -16,6 +17,11 @@ export const PopupContent = styled.div`
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+
+    @media ${responsiveSize.phone} {
+      flex-direction: column;  
+      height: 90%;
+    }
 `;
 
 export const PopupContainer = styled.div`
@@ -43,11 +49,26 @@ export const PopupContainer = styled.div`
 
 export const LeftBox = styled.div`
     width: 33%;
+
+    @media ${responsiveSize.phone} {
+        width: 100%; 
+        height: 55%;
+    }
+
+    @media ${responsiveSize.phoneSmall} {
+        width: 100%; 
+        height: 36%;
+    }
 `;
 
 export const PopupImg = styled.img`
     display: block;
     width: 100%;
+    height: 50%;
+
+    @media ${responsiveSize.phone} {
+        height: 50%;
+    }
 `;
 
 export const RightBox = styled.div`
@@ -56,10 +77,19 @@ export const RightBox = styled.div`
     flex-direction: column;
     width: 67%;
     padding: 3rem 5rem;
+
+    @media ${responsiveSize.phone} {
+        width: 100%; 
+        margin: auto 0;
+    }
 `;
 
 export const Title = styled(HeadingSecondary)`
     margin-bottom: 1.5rem;
+
+    @media ${responsiveSize.phoneSmall} {
+       font-size: 2rem;
+    }
 `;
 
 export const Subtitle = styled(HeadingTertiary)`
@@ -73,4 +103,8 @@ export const MainText = styled.p`
     column-gap: 4rem;
     column-rule: 1px solid ${({ theme }: ITheme): string => theme.colors.primary};
     hyphens: auto;
+
+    @media ${responsiveSize.phoneSmall320px} {
+       font-size: 1.3rem;
+    }
 `;
