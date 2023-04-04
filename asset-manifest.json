@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f0cb3bb6.css",
+    "main.js": "./static/js/main.3f14699a.js",
+    "static/media/CuttingWoodmp4.mp4": "./static/media/CuttingWoodmp4.c6bd4271bf872b47db2d.mp4",
+    "static/media/bgi-reviews-big.jpg": "./static/media/bgi-reviews-big.858a309cfc7291001a5b.jpg",
+    "static/media/CuttingWoodWebm.webm": "./static/media/CuttingWoodWebm.31439511868b52716aa0.webm",
+    "static/media/Company-big.jpg": "./static/media/Company-big.8aaf672074b9b94f478d.jpg",
+    "static/media/Builders-big.jpg": "./static/media/Builders-big.9653b709f26c0647f384.jpg",
+    "static/media/contactUs-big.jpg": "./static/media/contactUs-big.443481b59984d64c1a1a.jpg",
+    "static/media/House-big.jpg": "./static/media/House-big.41edc5b3d84ba9319932.jpg",
+    "static/media/Stairs-big.jpg": "./static/media/Stairs-big.8b1e4c1eced5ab81c926.jpg",
+    "static/media/bed-middle.jpg": "./static/media/bed-middle.5e19780bf5bb97a3309b.jpg",
+    "static/media/Woman2-small.jpg": "./static/media/Woman2-small.4897d647df5e6cd63d33.jpg",
+    "static/media/on1-small.jpg": "./static/media/on1-small.2a8c7562e32165963774.jpg",
+    "static/media/room4-small.jpg": "./static/media/room4-small.02f263e0b3c1821983b5.jpg",
+    "static/media/room3-small.jpg": "./static/media/room3-small.515479ad4bca02173df7.jpg",
+    "static/media/3.jpg": "./static/media/3.b9e429b6362dcdde27fa.jpg",
+    "static/media/1.jpg": "./static/media/1.25633db2d5f5fd6c017a.jpg",
+    "static/media/2.jpg": "./static/media/2.1ea36931d491493253c5.jpg",
+    "static/media/on2-small.jpg": "./static/media/on2-small.d9fd35b173f3a7ee1bba.jpg",
+    "static/media/kid-small.jpg": "./static/media/kid-small.b8ee2959aacfadacb747.jpg",
+    "static/media/logo-white.png": "./static/media/logo-white.4b3540b1c60ac33c2f3f.png",
+    "static/media/logo_bronze.png": "./static/media/logo_bronze.76306754025c34ae377e.png",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.f0cb3bb6.css.map": "./static/css/main.f0cb3bb6.css.map",
+    "main.3f14699a.js.map": "./static/js/main.3f14699a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0cb3bb6.css",
+    "static/js/main.3f14699a.js"
+  ]
+}
