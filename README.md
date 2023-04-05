@@ -1,4 +1,4 @@
-<a href="https://kkinod.github.io/Webpage-MrWoddenFloor/">LIVE version</a>
+<a href="https://kkinod.github.io/Mr-WoodenFloor__WebPage-React/">LIVE version</a>
 
 
 Website written in React, using styled components and TS.
