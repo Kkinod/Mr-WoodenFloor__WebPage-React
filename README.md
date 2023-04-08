@@ -7,7 +7,6 @@ I created this website to practice several elements, including:
 - creating a website practically without using JS, i.e. mainly CSS, but in this case I used Styled Components
 - all written from scratch, no external libraries (exception: slider)
 - tests: unit, integration and E2E (work in progress)
-- storybook (work in progress)
 
 
 ===============================================
