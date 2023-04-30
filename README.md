@@ -9,6 +9,12 @@ I created this website to practice several elements, including:
 - tests: unit, integration and E2E (work in progress)
 
 
+To do:
+- admin dashboar
+- login
+- create and connect to the site a small online store
+
+
 ===============================================
 
 # Getting Started with Create React App
