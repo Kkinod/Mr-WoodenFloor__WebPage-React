@@ -10,7 +10,7 @@ I created this website to practice several elements, including:
 
 
 To do:
-- admin dashboard
+- admin panel
 - login
 - create and connect to the site a small online store
 
